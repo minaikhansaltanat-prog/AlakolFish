@@ -1,0 +1,27 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldSazan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"/>
+      <stop offset="55%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#9C7320"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldSazan)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- deep rounded carp body -->
+    <path d="M48,150 C60,96 130,64 220,66 C300,68 350,98 384,140 C350,160 300,178 230,180 C150,182 80,170 48,150 Z" />
+    <!-- rounded dorsal fin -->
+    <path d="M168,70 C188,46 240,44 268,64" />
+    <!-- barbels (carp whiskers) -->
+    <path d="M50,156 C36,160 24,168 14,180 M50,164 C38,172 28,184 22,196" stroke-width="2.4"/>
+    <!-- scale arcs -->
+    <path d="M120,108 a18,14 0 0 1 36,0 M160,114 a18,14 0 0 1 36,0 M200,116 a18,14 0 0 1 36,0 M240,112 a18,14 0 0 1 36,0" stroke-width="2" opacity="0.8"/>
+    <!-- tail -->
+    <path d="M384,140 L412,112 M384,140 L412,168" />
+    <!-- lower fin -->
+    <path d="M210,178 L218,202 M250,176 L260,198" stroke-width="2.4"/>
+    <!-- eye -->
+    <circle cx="78" cy="118" r="5.5" fill="url(#goldSazan)" stroke="none"/>
+    <!-- water swoosh -->
+    <path d="M20,226 C90,212 150,238 230,226 C300,214 350,232 400,222" stroke-width="2" opacity="0.55"/>
+  </g>
+</svg>

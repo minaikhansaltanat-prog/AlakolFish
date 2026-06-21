@@ -1,0 +1,22 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldFile" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"/>
+      <stop offset="55%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#9C7320"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldFile)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- cutting board -->
+    <rect x="60" y="150" width="300" height="14" rx="7" opacity="0.5" stroke-width="2"/>
+    <!-- fillet wedge slice -->
+    <path d="M90,150 C100,110 150,82 220,86 C272,90 312,112 336,144 C300,156 250,164 196,160 C150,156 110,154 90,150 Z" />
+    <!-- flesh grain lines -->
+    <path d="M140,118 C170,108 200,108 228,116 M132,134 C168,124 206,124 242,132 M128,148 C166,140 208,140 246,146" stroke-width="2" opacity="0.75"/>
+    <!-- herb sprig -->
+    <path d="M300,96 C310,80 326,70 340,66 M308,84 L298,76 M316,76 L308,66 M324,70 L318,60" stroke-width="2.2"/>
+    <!-- lemon wedge -->
+    <circle cx="356" cy="138" r="22" stroke-width="2.4"/>
+    <path d="M356,118 L356,158 M338,128 L374,148 M338,148 L374,128" stroke-width="1.6" opacity="0.8"/>
+  </g>
+</svg>

@@ -1,0 +1,24 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldOkun" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"/>
+      <stop offset="55%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#9C7320"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldOkun)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- humped short body -->
+    <path d="M62,158 C78,100 140,72 210,76 C270,80 312,104 350,140 C312,166 260,182 200,182 C140,182 88,176 62,158 Z" />
+    <!-- very spiky dorsal fin (perch signature) -->
+    <path d="M120,86 L126,54 L136,90 L142,50 L152,92 L160,52 L170,94 L178,54 L188,92" />
+    <!-- vertical tiger stripes -->
+    <path d="M104,118 C108,140 108,160 104,176 M140,108 C144,134 144,158 140,178 M178,104 C182,132 182,158 178,180 M216,108 C220,134 220,158 216,178 M254,116 C258,138 258,158 254,174" stroke-width="2.2" opacity="0.85"/>
+    <!-- tail -->
+    <path d="M350,140 L378,114 M350,140 L378,166" />
+    <!-- lower fin -->
+    <path d="M190,180 L198,202 M224,178 L234,198" stroke-width="2.4"/>
+    <!-- eye -->
+    <circle cx="88" cy="128" r="5.5" fill="url(#goldOkun)" stroke="none"/>
+    <path d="M30,222 C90,210 150,232 220,222 C280,212 320,228 380,218" stroke-width="2" opacity="0.55"/>
+  </g>
+</svg>

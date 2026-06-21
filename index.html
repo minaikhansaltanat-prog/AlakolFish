@@ -1,0 +1,1256 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Оптом рыба Алматы | Ресторан, кафе жабдықтау | Alakol Fish</title>
+<meta name="description" content="Alakol Fish — судак, сазан, окунь, філе оптом Алматы. 10кг+. Рестораны мен кафелерге тұрақты жеткізу. Прайс → WhatsApp.">
+<meta name="keywords" content="рыба оптом Алматы, судак оптом, рыба для ресторана, балық оптом, fish wholesale Almaty">
+<meta property="og:title" content="Alakol Fish — Оптом рыба Алматы">
+<meta property="og:description" content="Судак, сазан, окунь, філе оптом Алматы. 10кг+. Тұрақты жеткізу.">
+<meta property="og:image" content="assets/images/hero-bg.jpg">
+<meta property="og:type" content="website">
+<link rel="icon" href="assets/images/logo.jpg">
+<script src="https://cdn.tailwindcss.com"></script>
+<script>
+  tailwind.config = {
+    theme: {
+      extend: {
+        colors: {
+          navy: '#0D2B6E',
+          navydark: '#081D4D',
+          navysoft: '#16387F',
+          gold: '#B8962E',
+          goldlight: '#D4AF52',
+          goldpale: '#E9CD7C',
+          lgold: '#FDF6DC',
+          lnavy: '#EAF0FB',
+          ink: '#1A1A2E',
+        },
+        fontFamily: {
+          serif: ['Georgia', 'Times New Roman', 'serif'],
+          sans: ['Arial', 'Helvetica', 'sans-serif'],
+        },
+        boxShadow: {
+          'gold-sm': '0 2px 8px -2px rgba(184,150,46,0.35)',
+          'gold-md': '0 10px 24px -8px rgba(184,150,46,0.4), 0 2px 8px -2px rgba(13,43,110,0.15)',
+          'navy-lg': '0 24px 48px -16px rgba(13,43,110,0.35)',
+          'card': '0 1px 2px rgba(13,43,110,0.06), 0 8px 24px -8px rgba(13,43,110,0.12)',
+          'card-hover': '0 4px 8px rgba(13,43,110,0.08), 0 20px 40px -12px rgba(184,150,46,0.28)',
+        }
+      }
+    }
+  }
+</script>
+<style>
+  :root{ --navy:#0D2B6E; --gold:#B8962E; }
+  html{ scroll-behavior:smooth; }
+  body{ font-family:'Arial','Helvetica',sans-serif; color:#1A1A2E; background:#FFFFFF; overflow-x:hidden; }
+  h1,h2,h3,.font-display{ font-family:'Georgia','Times New Roman',serif; }
+  .text-balance{ text-wrap:balance; }
+
+  /* grain texture overlay */
+  .grain{ position:absolute; inset:0; pointer-events:none; opacity:.08; mix-blend-mode:overlay;
+    background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='120' height='120'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='2' stitchTiles='stitch'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>"); }
+
+  /* gold focus ring */
+  a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible, summary:focus-visible{
+    outline:2px solid #B8962E; outline-offset:3px; border-radius:4px;
+  }
+
+  .btn-gold{ background:linear-gradient(135deg,#D4AF52,#B8962E 60%,#9C7320); color:#0D2B6E; font-weight:700; }
+  .btn-gold:hover{ box-shadow:0 14px 30px -8px rgba(184,150,46,.55); transform:translateY(-2px); }
+  .btn-whatsapp{ background:#1FAE52; color:#fff; }
+  .btn-whatsapp:hover{ background:#179042; box-shadow:0 14px 30px -8px rgba(31,174,82,.5); transform:translateY(-2px); }
+  .btn-outline-navy{ border:1.5px solid #0D2B6E; color:#0D2B6E; }
+  .btn-outline-navy:hover{ background:#0D2B6E; color:#fff; }
+
+  .transition-fast{ transition-property:transform,opacity,box-shadow,background-color,color,border-color; transition-duration:220ms; transition-timing-function:cubic-bezier(.22,.61,.36,1); }
+
+  [data-reveal]{ opacity:0; transform:translateY(28px); transition:opacity .7s cubic-bezier(.22,.61,.36,1), transform .7s cubic-bezier(.22,.61,.36,1); }
+  [data-reveal].is-visible{ opacity:1; transform:translateY(0); }
+  @media (prefers-reduced-motion: reduce){
+    [data-reveal]{ opacity:1; transform:none; transition:none; }
+    html{ scroll-behavior:auto; }
+  }
+
+  /* language toggle */
+  [data-i18n]{ }
+  html[data-lang="ru"] [data-kz-only]{ display:none !important; }
+  html[data-lang="kk"] [data-ru-only]{ display:none !important; }
+
+  /* carousel */
+  .carousel-track{ display:flex; gap:1.25rem; will-change:transform; }
+  .carousel-viewport{ overflow:hidden; -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent); mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent); }
+  .carousel-arrow{ width:44px; height:44px; border-radius:9999px; background:#fff; color:#0D2B6E; box-shadow:0 8px 20px -6px rgba(13,43,110,.35); display:flex; align-items:center; justify-content:center; cursor:pointer; }
+  .carousel-arrow:hover{ background:#B8962E; color:#fff; }
+
+  /* tabs */
+  .tab-btn{ position:relative; cursor:pointer; }
+  .tab-btn[aria-selected="true"]{ color:#B8962E; }
+  .tab-btn[aria-selected="true"]::after{ content:""; position:absolute; left:0; right:0; bottom:-2px; height:3px; background:#B8962E; border-radius:2px; }
+  .tab-panel{ display:none; }
+  .tab-panel.is-active{ display:block; }
+
+  /* mobile menu */
+  #mobileMenu{ transform-origin:top; transform:scaleY(0); opacity:0; transition:transform .38s cubic-bezier(.22,.61,.36,1), opacity .3s ease; pointer-events:none; }
+  #mobileMenu.is-open{ transform:scaleY(1); opacity:1; pointer-events:auto; }
+  .hamburger-line{ transition:transform .3s ease, opacity .3s ease; }
+
+  .accordion-content{ max-height:0; overflow:hidden; transition:max-height .35s cubic-bezier(.22,.61,.36,1); }
+  details[open] > .accordion-content{ }
+  summary::-webkit-details-marker{ display:none; }
+
+  .star-gold{ color:#B8962E; }
+  .scrollbar-none::-webkit-scrollbar{ display:none; }
+  .scrollbar-none{ scrollbar-width:none; }
+</style>
+</head>
+<body class="antialiased">
+
+<!-- ============ HEADER ============ -->
+<header id="siteHeader" class="fixed top-0 left-0 right-0 z-50 bg-navy/95 backdrop-blur-sm shadow-navy-lg">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-[72px] flex items-center justify-between">
+    <a href="#hero" class="flex items-center gap-2 shrink-0 cursor-pointer">
+      <img src="assets/images/logo.jpg" alt="Alakol Fish логотипі" class="h-12 w-auto rounded-md">
+    </a>
+
+    <nav class="hidden lg:flex items-center gap-7 text-white/90 text-[15px] font-medium">
+      <a href="#catalog" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Өнімдер" data-ru="Продукция">Өнімдер</a>
+      <a href="#advantages" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="B2B" data-ru="B2B">B2B</a>
+      <a href="#pricing" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Прайс" data-ru="Цены">Прайс</a>
+      <a href="#reviews" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Пікірлер" data-ru="Отзывы">Пікірлер</a>
+      <a href="#b2c" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Үй жеткізу" data-ru="Доставка">Үй жеткізу</a>
+      <a href="#faq" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="FAQ" data-ru="Вопросы">FAQ</a>
+    </nav>
+
+    <div class="flex items-center gap-3">
+      <button id="langToggle" type="button" aria-label="Тілді ауыстыру / Переключить язык"
+        class="hidden sm:flex items-center gap-1 text-xs font-bold tracking-wide text-white border border-white/25 rounded-full px-3 py-1.5 hover:border-goldlight hover:text-goldlight transition-fast cursor-pointer">
+        <span data-lang-label-kk>ҚАЗ</span><span class="opacity-50">/</span><span data-lang-label-ru>РУС</span>
+      </button>
+
+      <a href="https://wa.me/77019448969?text=Сал%D0%B5м%D0%B5тс%D1%96з%D0%B1е!%20Пра%D0%B9с-лист%20а%D0%BB%D1%83%20%D0%BA%D0%B5%D1%80%D0%B5%D0%BA"
+         target="_blank" rel="noopener"
+         class="hidden md:inline-flex btn-whatsapp items-center gap-2 rounded-full px-4 py-2.5 text-sm font-bold transition-fast cursor-pointer">
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        <span data-kz="WhatsApp" data-ru="WhatsApp">WhatsApp</span>
+      </a>
+
+      <button id="hamburgerBtn" type="button" aria-label="Мәзірді ашу" aria-expanded="false" aria-controls="mobileMenu"
+        class="lg:hidden relative w-11 h-11 flex flex-col items-center justify-center gap-[5px] cursor-pointer rounded-lg hover:bg-white/10 transition-fast">
+        <span class="hamburger-line block w-6 h-[2px] bg-white rounded"></span>
+        <span class="hamburger-line block w-6 h-[2px] bg-white rounded"></span>
+        <span class="hamburger-line block w-6 h-[2px] bg-white rounded"></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<!-- ============ MOBILE MENU (accordion overlay) ============ -->
+<div id="mobileMenu" class="fixed inset-0 z-40 bg-navy lg:hidden" role="dialog" aria-modal="true" aria-label="Мобиль мәзір">
+  <div class="absolute inset-0 grain"></div>
+  <div class="relative h-full flex flex-col pt-[88px] px-6 pb-8 overflow-y-auto">
+    <button id="mobileCloseBtn" type="button" aria-label="Мәзірді жабу"
+      class="absolute top-5 right-4 w-11 h-11 flex items-center justify-center rounded-full bg-white/10 hover:bg-gold hover:text-navy text-white transition-fast cursor-pointer">
+      <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+
+    <nav class="flex flex-col divide-y divide-white/10 text-white">
+      <a href="#hero" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Басты бет" data-ru="Главная">Басты бет</span> <span class="text-gold">→</span></a>
+      <a href="#catalog" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Өнімдер каталогы" data-ru="Каталог продукции">Өнімдер каталогы</span> <span class="text-gold">→</span></a>
+      <a href="#advantages" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="B2B артықшылықтары" data-ru="Преимущества B2B">B2B артықшылықтары</span> <span class="text-gold">→</span></a>
+      <a href="#pricing" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Тариф / Прайс-лист" data-ru="Тарифы / Прайс-лист">Тариф / Прайс-лист</span> <span class="text-gold">→</span></a>
+      <a href="#reviews" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Тұтынушылар пікірі" data-ru="Отзывы клиентов">Тұтынушылар пікірі</span> <span class="text-gold">→</span></a>
+      <a href="#founder" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Назира туралы" data-ru="О Назире">Назира туралы</span> <span class="text-gold">→</span></a>
+      <a href="#b2c" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Үйге жеткізу" data-ru="Доставка на дом">Үйге жеткізу</span> <span class="text-gold">→</span></a>
+      <a href="#order" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Тапсырыс беру" data-ru="Оформить заказ">Тапсырыс беру</span> <span class="text-gold">→</span></a>
+      <a href="#faq" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Жиі сұрақтар" data-ru="Частые вопросы">Жиі сұрақтар</span> <span class="text-gold">→</span></a>
+      <a href="#footer" class="mobile-link py-4 text-lg font-semibold flex items-center justify-between cursor-pointer"><span data-kz="Байланыс" data-ru="Контакты">Байланыс</span> <span class="text-gold">→</span></a>
+    </nav>
+
+    <div class="mt-auto pt-6 flex flex-col gap-3">
+      <button id="langToggleMobile" type="button" class="flex items-center justify-center gap-2 text-sm font-bold text-white border border-white/25 rounded-full px-4 py-2.5 cursor-pointer">
+        <span data-lang-label-kk>ҚАЗ</span><span class="opacity-50">/</span><span data-lang-label-ru>РУС</span>
+      </button>
+      <a href="https://wa.me/77019448969" target="_blank" rel="noopener" class="btn-whatsapp flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold cursor-pointer">
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+        WhatsApp
+      </a>
+    </div>
+  </div>
+</div>
+
+<!-- ============ HERO ============ -->
+<section id="hero" class="relative pt-[104px] pb-14 sm:min-h-[100vh] sm:flex sm:items-center sm:pb-16 sm:pt-[72px] overflow-hidden">
+  <div class="absolute inset-0">
+    <img src="assets/images/hero-bg.jpg" alt="Алакөл көлі — Alakol Fish балық аулау өңірі" class="w-full h-full object-cover">
+    <div class="absolute inset-0 bg-gradient-to-r from-navy via-navy/85 to-navy/40"></div>
+    <div class="absolute inset-0 bg-gradient-to-t from-navydark via-transparent to-navy/30"></div>
+    <div class="grain"></div>
+  </div>
+
+  <div class="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 w-full">
+    <div class="max-w-2xl">
+      <span data-reveal class="inline-flex items-center gap-2 bg-white/10 border border-white/20 text-goldpale text-xs font-bold tracking-wider uppercase rounded-full px-4 py-2 mb-6">
+        <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="currentColor"><circle cx="12" cy="12" r="10"/></svg>
+        <span data-kz="B2B Оптом · Алматы" data-ru="B2B Опт · Алматы">B2B Оптом · Алматы</span>
+      </span>
+
+      <h1 data-reveal class="font-display text-white text-[34px] leading-[1.15] sm:text-5xl lg:text-[54px] font-bold tracking-[-0.02em] text-balance mb-6"
+          data-kz="Рестораныңызды, кафеңізді, асханаңызды — Алакөл балығымен жабдықтаңыз"
+          data-ru="Снабжайте ваш ресторан, кафе или столовую рыбой Алаколя — оптом, напрямую">
+        Рестораныңызды, кафеңізді, асханаңызды — Алакөл балығымен жабдықтаңыз
+      </h1>
+
+      <p data-reveal class="text-white/85 text-lg leading-[1.7] mb-9 max-w-xl"
+         data-kz="10 кг-дан бастап оптом. Тазаланған, жаңа партия. Алматы бойынша тұрақты жеткізу."
+         data-ru="Оптом от 10 кг. Свежие партии. Стабильная доставка по Алматы.">
+        10 кг-дан бастап оптом. Тазаланған, жаңа партия. Алматы бойынша тұрақты жеткізу.
+      </p>
+
+      <div data-reveal class="flex flex-wrap items-center gap-4">
+        <a href="#order" class="btn-gold transition-fast inline-flex items-center gap-2 rounded-full px-7 py-4 text-base shadow-gold-md cursor-pointer">
+          <span data-kz="ПРАЙС-ЛИСТ АЛУ" data-ru="ПОЛУЧИТЬ ПРАЙС-ЛИСТ">ПРАЙС-ЛИСТ АЛУ</span>
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <a href="https://wa.me/77019448969" target="_blank" rel="noopener" class="btn-whatsapp transition-fast inline-flex items-center gap-2 rounded-full px-7 py-4 text-base cursor-pointer">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+          <span data-kz="WhatsApp арқылы байланысу" data-ru="Связаться в WhatsApp">WhatsApp арқылы байланысу</span>
+        </a>
+      </div>
+
+      <div data-reveal class="mt-12 flex flex-wrap gap-x-10 gap-y-4 text-white/90">
+        <div class="flex items-center gap-2"><span class="text-gold font-display text-2xl font-bold">5</span><span class="text-sm" data-kz="балық түрі" data-ru="видов рыбы">балық түрі</span></div>
+        <div class="flex items-center gap-2"><span class="text-gold font-display text-2xl font-bold">10кг+</span><span class="text-sm" data-kz="оптом бастап" data-ru="опт от">оптом бастап</span></div>
+        <div class="flex items-center gap-2"><span class="text-gold font-display text-2xl font-bold">5</span><span class="text-sm" data-kz="мин WhatsApp жауап" data-ru="мин ответ WhatsApp">мин WhatsApp жауап</span></div>
+      </div>
+    </div>
+  </div>
+
+  <a href="#catalog" aria-label="Төмен скролл" class="hidden sm:flex absolute bottom-7 left-1/2 -translate-x-1/2 z-10 flex-col items-center gap-2 text-white/70 hover:text-goldlight transition-fast cursor-pointer">
+    <span class="text-xs uppercase tracking-wider" data-kz="Көру" data-ru="Смотреть">Көру</span>
+    <svg viewBox="0 0 24 24" class="w-5 h-5 animate-bounce" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 5v14M5 12l7 7 7-7"/></svg>
+  </a>
+</section>
+
+<!-- ============ CATALOG ============ -->
+<section id="catalog" class="relative py-20 sm:py-28 bg-white">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-reveal class="max-w-2xl mb-14">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Каталог" data-ru="Каталог">Каталог</span>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3"
+          data-kz="Өнімдер каталогы — 5 балық" data-ru="Каталог продукции — 5 видов рыбы">Өнімдер каталогы — 5 балық</h2>
+      <p class="text-ink/70 leading-[1.7] mt-4" data-kz="Алакөлден тікелей жеткізілетін, ветеринарлық сертификатпен тазаланған жаңа балық." data-ru="Свежая рыба прямо с Алаколя, с ветеринарным сертификатом и полной обработкой.">Алакөлден тікелей жеткізілетін, ветеринарлық сертификатпен тазаланған жаңа балық.</p>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1: Судак крупный -->
+      <article data-reveal class="group relative bg-navy rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-fast cursor-pointer flex flex-col">
+        <div class="relative h-52 flex items-center justify-center bg-gradient-to-br from-navysoft to-navydark p-6">
+          <img src="assets/images/products/sudak-krupnyi.svg" alt="Судак крупный" class="w-full h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.35)] group-hover:scale-105 transition-fast" style="transition-duration:400ms">
+          <span class="absolute top-4 right-4 bg-gold text-navy text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1" data-kz="Жоғары сұраныс" data-ru="Высокий спрос">Жоғары сұраныс</span>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Судак крупный</h3>
+          <p class="text-white/70 text-sm mb-1" data-kz="Ірі 1.5кг+ · Ресторан деңгейі" data-ru="Крупный 1.5кг+ · Уровень ресторана">Ірі 1.5кг+ · Ресторан деңгейі</p>
+          <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Стейк, шашлык, фиш-плейт" data-ru="Стейк, шашлык, фиш-плейт">Стейк, шашлык, фиш-плейт</p>
+          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
+            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 2: Судак средний -->
+      <article data-reveal class="group relative bg-navy rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-fast cursor-pointer flex flex-col">
+        <div class="relative h-52 flex items-center justify-center bg-gradient-to-br from-navysoft to-navydark p-6">
+          <img src="assets/images/products/sudak-sredniy.svg" alt="Судак средний" class="w-full h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.35)] group-hover:scale-105 transition-fast" style="transition-duration:400ms">
+          <span class="absolute top-4 right-4 bg-white/15 text-white text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1" data-kz="Тұрақты сұраныс" data-ru="Стабильный спрос">Тұрақты сұраныс</span>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Судак средний</h3>
+          <p class="text-white/70 text-sm mb-1" data-kz="Орта 0.5-1.5кг · Кафе/асхана" data-ru="Средний 0.5-1.5кг · Кафе/столовая">Орта 0.5-1.5кг · Кафе/асхана</p>
+          <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Тағамдар, котлет, запекание" data-ru="Блюда, котлеты, запеканка">Тағамдар, котлет, запекание</p>
+          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
+            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 3: Сазан средний -->
+      <article data-reveal class="group relative bg-navy rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-fast cursor-pointer flex flex-col">
+        <div class="relative h-52 flex items-center justify-center bg-gradient-to-br from-navysoft to-navydark p-6">
+          <img src="assets/images/products/sazan-sredniy.svg" alt="Сазан средний" class="w-full h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.35)] group-hover:scale-105 transition-fast" style="transition-duration:400ms">
+          <span class="absolute top-4 right-4 bg-gold text-navy text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1" data-kz="Жоғары сұраныс" data-ru="Высокий спрос">Жоғары сұраныс</span>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Сазан средний</h3>
+          <p class="text-white/70 text-sm mb-1" data-kz="Орта · Ұлттық тағамдарға" data-ru="Средний · Для нац. блюд">Орта · Ұлттық тағамдарға</p>
+          <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Бесбармақ, сорпа, қуырма" data-ru="Бесбармак, шурпа, жаркое">Бесбармақ, сорпа, қуырма</p>
+          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
+            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 4: Окунь -->
+      <article data-reveal class="group relative bg-navy rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-fast cursor-pointer flex flex-col">
+        <div class="relative h-52 flex items-center justify-center bg-gradient-to-br from-navysoft to-navydark p-6">
+          <img src="assets/images/products/okun.svg" alt="Окунь" class="w-full h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.35)] group-hover:scale-105 transition-fast" style="transition-duration:400ms">
+          <span class="absolute top-4 right-4 bg-white/15 text-white text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1" data-kz="Орташа сұраныс" data-ru="Средний спрос">Орташа сұраныс</span>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Окунь</h3>
+          <p class="text-white/70 text-sm mb-1" data-kz="Диеталық, жылдам" data-ru="Диетический, быстрый">Диеталық, жылдам</p>
+          <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Мангал, гриль, котлет" data-ru="Мангал, гриль, котлеты">Мангал, гриль, котлет</p>
+          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
+            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 5: Філе -->
+      <article data-reveal class="group relative bg-navy rounded-2xl overflow-hidden shadow-card hover:shadow-card-hover transition-fast cursor-pointer flex flex-col">
+        <div class="relative h-52 flex items-center justify-center bg-gradient-to-br from-navysoft to-navydark p-6">
+          <img src="assets/images/products/file.svg" alt="Філе" class="w-full h-full object-contain drop-shadow-[0_8px_20px_rgba(0,0,0,0.35)] group-hover:scale-105 transition-fast" style="transition-duration:400ms">
+          <span class="absolute top-4 right-4 bg-gold text-navy text-[11px] font-bold uppercase tracking-wide rounded-full px-3 py-1">B2B + B2C</span>
+        </div>
+        <div class="p-6 flex flex-col grow">
+          <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Філе</h3>
+          <p class="text-white/70 text-sm mb-1" data-kz="Тазаланған, сүйексіз" data-ru="Очищенное, без костей">Тазаланған, сүйексіз</p>
+          <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Кез келген тағамға тиімді" data-ru="Подходит для любых блюд">Кез келген тағамға тиімді</p>
+          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
+            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
+            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+      </article>
+
+      <!-- Card 6: trust / certificate filler card -->
+      <article data-reveal class="relative bg-lgold rounded-2xl overflow-hidden shadow-card flex flex-col items-center justify-center text-center p-8">
+        <svg viewBox="0 0 24 24" class="w-12 h-12 text-gold mb-4" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        <h3 class="font-display text-navy text-lg font-bold mb-2" data-kz="Ветеринарлық сертификат" data-ru="Ветеринарный сертификат">Ветеринарлық сертификат</h3>
+        <p class="text-ink/65 text-sm leading-relaxed" data-kz="Барлық өнім тексеруден өтеді әрі сертификатпен жеткізіледі" data-ru="Вся продукция проходит проверку и поставляется с сертификатом">Барлық өнім тексеруден өтеді әрі сертификатпен жеткізіледі</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ADVANTAGES (B2B) ============ -->
+<section id="advantages" class="relative py-20 sm:py-28 bg-lnavy overflow-hidden">
+  <div class="absolute -top-24 -right-24 w-96 h-96 rounded-full bg-gold/10 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div data-reveal class="max-w-2xl mb-14">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Сенімділік" data-ru="Надёжность">Сенімділік</span>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3" data-kz="B2B артықшылықтары" data-ru="Преимущества для B2B">B2B артықшылықтары</h2>
+    </div>
+
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
+      <div data-reveal class="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-fast cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-5">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 12h18M3 6h18M3 18h18"/></svg>
+        </div>
+        <h3 class="font-display text-navy text-lg font-bold mb-2" data-kz="Тұрақты жеткізу" data-ru="Стабильные поставки">Тұрақты жеткізу</h3>
+        <p class="text-ink/65 text-sm leading-relaxed" data-kz="Апта сайын кестемен" data-ru="По расписанию каждую неделю">Апта сайын кестемен</p>
+      </div>
+      <div data-reveal class="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-fast cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-5">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 12V8H6a2 2 0 010-4h12v4M4 6v12a2 2 0 002 2h14v-4M18 12a2 2 0 100 4 2 2 0 000-4z"/></svg>
+        </div>
+        <h3 class="font-display text-navy text-lg font-bold mb-2" data-kz="10 кг-дан оптом" data-ru="Опт от 10 кг">10 кг-дан оптом</h3>
+        <p class="text-ink/65 text-sm leading-relaxed" data-kz="Рестораны мен кафеге тиімді баға" data-ru="Выгодная цена для ресторанов и кафе">Рестораны мен кафеге тиімді баға</p>
+      </div>
+      <div data-reveal class="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-fast cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-5">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 text-gold" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+        </div>
+        <h3 class="font-display text-navy text-lg font-bold mb-2" data-kz="Жаңа Алакөл балығы" data-ru="Свежая рыба Алаколя">Жаңа Алакөл балығы</h3>
+        <p class="text-ink/65 text-sm leading-relaxed" data-kz="Ветеринарлық сертификатпен" data-ru="С ветеринарным сертификатом">Ветеринарлық сертификатпен</p>
+      </div>
+      <div data-reveal class="bg-white rounded-2xl p-7 shadow-card hover:shadow-card-hover transition-fast cursor-pointer">
+        <div class="w-12 h-12 rounded-xl bg-navy flex items-center justify-center mb-5">
+          <svg viewBox="0 0 24 24" class="w-6 h-6 text-gold" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </div>
+        <h3 class="font-display text-navy text-lg font-bold mb-2" data-kz="5 минутта жауап" data-ru="Ответ за 5 минут">5 минутта жауап</h3>
+        <p class="text-ink/65 text-sm leading-relaxed" data-kz="WhatsApp-та" data-ru="В WhatsApp">WhatsApp-та</p>
+      </div>
+    </div>
+
+    <div data-reveal class="bg-navy rounded-3xl p-8 sm:p-10 text-center shadow-navy-lg">
+      <p class="text-goldpale text-xs font-bold uppercase tracking-[0.18em] mb-5" data-kz="Бізге сенетін мекемелер" data-ru="Нам доверяют">Бізге сенетін мекемелер</p>
+      <div class="flex flex-wrap justify-center gap-x-10 gap-y-4 text-white/85 font-display text-base sm:text-lg">
+        <span data-kz="Рестораны" data-ru="Рестораны">Рестораны</span>
+        <span class="text-gold/40">·</span>
+        <span data-kz="Кафелер" data-ru="Кафе">Кафелер</span>
+        <span class="text-gold/40">·</span>
+        <span data-kz="Асханалар" data-ru="Столовые">Асханалар</span>
+        <span class="text-gold/40">·</span>
+        <span data-kz="Қонақ үйлер" data-ru="Гостиницы">Қонақ үйлер</span>
+        <span class="text-gold/40">·</span>
+        <span data-kz="Dark Kitchen" data-ru="Dark Kitchen">Dark Kitchen</span>
+        <span class="text-gold/40">·</span>
+        <span data-kz="Балық дүкендері" data-ru="Магазины рыбы">Балық дүкендері</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ PRICING ============ -->
+<section id="pricing" class="relative py-20 sm:py-28 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-reveal class="max-w-2xl mb-14">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Конверсия" data-ru="Конверсия">Конверсия</span>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3" data-kz="Тариф / Прайс-лист — B2B оптом" data-ru="Тарифы / Прайс-лист — B2B опт">Тариф / Прайс-лист — B2B оптом</h2>
+      <p class="text-ink/70 leading-[1.7] mt-4" data-kz="Ашық баға = сенімділік = конверсия. Бұл блок B2B үшін ең маңызды шешім қабылдату нүктесі." data-ru="Открытая цена = доверие = конверсия. Этот блок — ключевая точка принятия решения для B2B.">Ашық баға = сенімділік = конверсия. Бұл блок B2B үшін ең маңызды шешім қабылдату нүктесі.</p>
+    </div>
+
+    <div class="grid grid-cols-1 md:grid-cols-3 gap-7 items-start">
+      <!-- Старт -->
+      <div data-reveal class="relative bg-white border border-navy/10 rounded-3xl p-8 shadow-card hover:shadow-card-hover transition-fast">
+        <h3 class="font-display text-navy text-2xl font-bold mb-1">Старт</h3>
+        <p class="text-ink/55 text-sm mb-6" data-kz="Бірінші тапсырыс үшін" data-ru="Для первого заказа">Бірінші тапсырыс үшін</p>
+        <ul class="space-y-3.5 text-sm text-ink/75 mb-8">
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Минималды тапсырыс" data-ru="Мин. заказ">Минималды тапсырыс</span><b class="text-navy">10 кг-дан</b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Жеткізу" data-ru="Доставка">Жеткізу</span><b class="text-navy" data-kz="Ақылы" data-ru="Платная">Ақылы</b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Баға" data-ru="Цена">Баға</span><b class="text-navy" data-kz="Базалық" data-ru="Базовая">Базалық</b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Жиілік" data-ru="Частота">Жиілік</span><b class="text-navy" data-kz="Тапсырыс бойынша" data-ru="По заказу">Тапсырыс бойынша</b></li>
+          <li class="flex justify-between"><span data-kz="Менеджер" data-ru="Менеджер">Менеджер</span><b class="text-navy" data-kz="Жалпы WhatsApp" data-ru="Общий WhatsApp">Жалпы WhatsApp</b></li>
+        </ul>
+        <a href="#order" class="btn-outline-navy transition-fast w-full flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-bold cursor-pointer">
+          <span data-kz="ПРАЙС-ЛИСТ PDF АЛУ" data-ru="ПОЛУЧИТЬ ПРАЙС PDF">ПРАЙС-ЛИСТ PDF АЛУ</span>
+        </a>
+      </div>
+
+      <!-- Оптимум (popular) -->
+      <div data-reveal class="relative bg-navy border-2 border-gold rounded-3xl p-8 shadow-navy-lg md:-translate-y-4">
+        <span class="absolute -top-4 left-1/2 -translate-x-1/2 bg-gold text-navy text-xs font-bold uppercase tracking-wide rounded-full px-4 py-1.5 shadow-gold-sm whitespace-nowrap">★ <span data-kz="Ең танымал" data-ru="Самый популярный">Ең танымал</span></span>
+        <h3 class="font-display text-goldpale text-2xl font-bold mb-1 mt-2">Оптимум</h3>
+        <p class="text-white/55 text-sm mb-6" data-kz="Тұрақты серіктестер үшін" data-ru="Для постоянных партнёров">Тұрақты серіктестер үшін</p>
+        <ul class="space-y-3.5 text-sm text-white/85 mb-8">
+          <li class="flex justify-between border-b border-dashed border-white/15 pb-2"><span data-kz="Минималды тапсырыс" data-ru="Мин. заказ">Минималды тапсырыс</span><b class="text-goldpale">30 кг-дан</b></li>
+          <li class="flex justify-between border-b border-dashed border-white/15 pb-2"><span data-kz="Жеткізу" data-ru="Доставка">Жеткізу</span><b class="text-goldpale" data-kz="Жарым-жартылай тегін" data-ru="Частично бесплатно">Жарым-жартылай тегін</b></li>
+          <li class="flex justify-between border-b border-dashed border-white/15 pb-2"><span data-kz="Баға" data-ru="Цена">Баға</span><b class="text-goldpale">5% <span data-kz="жеңілдік" data-ru="скидка">жеңілдік</span></b></li>
+          <li class="flex justify-between border-b border-dashed border-white/15 pb-2"><span data-kz="Жиілік" data-ru="Частота">Жиілік</span><b class="text-goldpale" data-kz="Аптасына 1-2 рет" data-ru="1-2 раза в неделю">Аптасына 1-2 рет</b></li>
+          <li class="flex justify-between"><span data-kz="Менеджер" data-ru="Менеджер">Менеджер</span><b class="text-goldpale" data-kz="Жеке менеджер" data-ru="Личный менеджер">Жеке менеджер</b></li>
+        </ul>
+        <a href="#order" class="btn-gold transition-fast w-full flex items-center justify-center rounded-full px-6 py-3.5 text-sm shadow-gold-md cursor-pointer">
+          <span data-kz="ПРАЙС-ЛИСТ PDF АЛУ" data-ru="ПОЛУЧИТЬ ПРАЙС PDF">ПРАЙС-ЛИСТ PDF АЛУ</span>
+        </a>
+      </div>
+
+      <!-- Максимум -->
+      <div data-reveal class="relative bg-white border border-navy/10 rounded-3xl p-8 shadow-card hover:shadow-card-hover transition-fast">
+        <h3 class="font-display text-navy text-2xl font-bold mb-1">Максимум</h3>
+        <p class="text-ink/55 text-sm mb-6" data-kz="Ірі мекемелер үшін" data-ru="Для крупных заведений">Ірі мекемелер үшін</p>
+        <ul class="space-y-3.5 text-sm text-ink/75 mb-8">
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Минималды тапсырыс" data-ru="Мин. заказ">Минималды тапсырыс</span><b class="text-navy">100 кг-дан</b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Жеткізу" data-ru="Доставка">Жеткізу</span><b class="text-navy" data-kz="ТЕГІН" data-ru="БЕСПЛАТНО">ТЕГІН</b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Баға" data-ru="Цена">Баға</span><b class="text-navy">10% <span data-kz="жеңілдік" data-ru="скидка">жеңілдік</span></b></li>
+          <li class="flex justify-between border-b border-dashed border-navy/10 pb-2"><span data-kz="Жиілік" data-ru="Частота">Жиілік</span><b class="text-navy" data-kz="Аптасына 3+ рет" data-ru="3+ раза в неделю">Аптасына 3+ рет</b></li>
+          <li class="flex justify-between"><span data-kz="Менеджер" data-ru="Менеджер">Менеджер</span><b class="text-navy">VIP <span data-kz="менеджер" data-ru="менеджер">менеджер</span></b></li>
+        </ul>
+        <a href="#order" class="btn-outline-navy transition-fast w-full flex items-center justify-center rounded-full px-6 py-3.5 text-sm font-bold cursor-pointer">
+          <span data-kz="ПРАЙС-ЛИСТ PDF АЛУ" data-ru="ПОЛУЧИТЬ ПРАЙС PDF">ПРАЙС-ЛИСТ PDF АЛУ</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ REVIEWS — 4 FORMATS ============ -->
+<section id="reviews" class="relative py-20 sm:py-28 bg-navy overflow-hidden">
+  <div class="absolute inset-0 grain"></div>
+  <div class="absolute -bottom-32 -left-32 w-96 h-96 rounded-full bg-gold/10 blur-3xl"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div data-reveal class="max-w-2xl mb-10">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Сенімділік (толық)" data-ru="Доверие (полностью)">Сенімділік (толық)</span>
+      <h2 class="font-display text-white text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3" data-kz="Тұтынушылар не айтады?" data-ru="Что говорят клиенты?">Тұтынушылар не айтады?</h2>
+      <p class="text-white/65 leading-[1.7] mt-4" data-kz="Видео · Жазбаша · Аудио · 2GIS — 4 форматта сенімділік." data-ru="Видео · Текст · Аудио · 2GIS — доверие в 4 форматах.">Видео · Жазбаша · Аудио · 2GIS — 4 форматта сенімділік.</p>
+    </div>
+
+    <!-- Tabs -->
+    <div data-reveal role="tablist" aria-label="Пікір форматтары" class="flex items-center gap-6 sm:gap-9 border-b border-white/15 mb-10 overflow-x-auto scrollbar-none">
+      <button class="tab-btn shrink-0 pb-4 text-white/60 font-bold text-sm sm:text-base cursor-pointer" role="tab" aria-selected="true" aria-controls="panel-video" id="tab-video" data-tab="video">
+        <span class="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"><path d="M8 5v14l11-7z"/></svg><span data-kz="Видео" data-ru="Видео">Видео</span></span>
+      </button>
+      <button class="tab-btn shrink-0 pb-4 text-white/60 font-bold text-sm sm:text-base cursor-pointer" role="tab" aria-selected="false" aria-controls="panel-written" id="tab-written" data-tab="written">
+        <span class="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 20h9M16.5 3.5a2.1 2.1 0 113 3L7 19l-4 1 1-4 12.5-12.5z"/></svg><span data-kz="Жазбаша" data-ru="Текст">Жазбаша</span></span>
+      </button>
+      <button class="tab-btn shrink-0 pb-4 text-white/60 font-bold text-sm sm:text-base cursor-pointer" role="tab" aria-selected="false" aria-controls="panel-audio" id="tab-audio" data-tab="audio">
+        <span class="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2M12 19v4"/></svg><span data-kz="Аудио" data-ru="Аудио">Аудио</span></span>
+      </button>
+      <button class="tab-btn shrink-0 pb-4 text-white/60 font-bold text-sm sm:text-base cursor-pointer" role="tab" aria-selected="false" aria-controls="panel-2gis" id="tab-2gis" data-tab="2gis">
+        <span class="inline-flex items-center gap-2"><svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 21s-7-5.4-7-11a7 7 0 1114 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg><span>2GIS</span></span>
+      </button>
+    </div>
+
+    <!-- VIDEO PANEL -->
+    <div id="panel-video" class="tab-panel is-active" role="tabpanel" aria-labelledby="tab-video">
+      <div data-reveal class="relative">
+        <div class="carousel-viewport" data-carousel="video">
+          <div class="carousel-track" data-track>
+            <!-- 8 video cards -->
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-1.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-2.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-3.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-4.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-5.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-6.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-7.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+            <div class="video-card relative shrink-0 w-[230px] sm:w-[260px] aspect-[9/16] rounded-2xl overflow-hidden bg-navydark shadow-card cursor-pointer">
+              <video class="w-full h-full object-cover" src="assets/video/review-8.mp4" preload="metadata" muted playsinline loop></video>
+              <button type="button" class="play-overlay absolute inset-0 flex items-center justify-center bg-black/25 hover:bg-black/15 transition-fast cursor-pointer" aria-label="Видеоны ойнату">
+                <span class="w-14 h-14 rounded-full bg-gold/95 flex items-center justify-center shadow-gold-md"><svg viewBox="0 0 24 24" class="w-6 h-6 text-navy" fill="currentColor"><path d="M8 5v14l11-7z"/></svg></span>
+              </button>
+            </div>
+          </div>
+        </div>
+        <button type="button" class="carousel-arrow flex absolute left-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-11 sm:h-11" data-arrow="video" data-dir="-1" aria-label="Солға">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="carousel-arrow flex absolute right-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-11 sm:h-11" data-arrow="video" data-dir="1" aria-label="Оңға">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p class="text-center text-white/45 text-xs mt-6" data-kz="Сіздің видеоңызды қосуға дайынмыз → WhatsApp" data-ru="Готовы добавить ваше видео → WhatsApp">Сіздің видеоңызды қосуға дайынмыз → WhatsApp</p>
+    </div>
+
+    <!-- WRITTEN PANEL -->
+    <div id="panel-written" class="tab-panel" role="tabpanel" aria-labelledby="tab-written">
+      <div data-reveal class="relative">
+        <div class="carousel-viewport" data-carousel="written">
+          <div class="carousel-track" data-track>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-1.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-2.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-3.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-4.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-5.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-6.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-7.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-8.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-9.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+            <div class="written-card shrink-0 w-[210px] sm:w-[230px] rounded-2xl overflow-hidden bg-white shadow-card cursor-pointer">
+              <img src="assets/images/reviews-written/review-10.jpg" alt="Тұтынушы пікірі — WhatsApp хабарламасы" class="w-full h-auto block" loading="lazy">
+            </div>
+          </div>
+        </div>
+        <button type="button" class="carousel-arrow flex absolute left-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-11 sm:h-11" data-arrow="written" data-dir="-1" aria-label="Солға">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M15 18l-6-6 6-6"/></svg>
+        </button>
+        <button type="button" class="carousel-arrow flex absolute right-1 top-1/2 -translate-y-1/2 z-10 w-9 h-9 sm:w-11 sm:h-11" data-arrow="written" data-dir="1" aria-label="Оңға">
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M9 18l6-6-6-6"/></svg>
+        </button>
+      </div>
+      <p class="text-center text-white/45 text-xs mt-6" data-kz="Нақты WhatsApp хабарламалары — клиенттердің рұқсатымен жарияланды" data-ru="Реальные сообщения из WhatsApp — опубликованы с согласия клиентов">Нақты WhatsApp хабарламалары — клиенттердің рұқсатымен жарияланды</p>
+    </div>
+
+    <!-- AUDIO PANEL -->
+    <div id="panel-audio" class="tab-panel" role="tabpanel" aria-labelledby="tab-audio">
+      <div data-reveal class="flex flex-wrap justify-center gap-6">
+        <div class="audio-card w-full sm:w-[340px] bg-navydark rounded-2xl p-6 shadow-card flex items-center gap-4">
+          <button type="button" class="audio-play-btn shrink-0 w-14 h-14 rounded-full bg-gold flex items-center justify-center text-navy cursor-pointer hover:scale-105 transition-fast" aria-label="Аудио ойнату">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="grow">
+            <div class="flex items-end gap-[3px] h-7 mb-1">
+              <span class="w-[3px] bg-gold/70 rounded-full" style="height:40%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:70%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:100%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:55%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:85%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:35%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:65%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:45%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:75%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:30%"></span>
+            </div>
+            <p class="text-white/55 text-xs" data-kz="B2B клиент дауыс хабары · 0:34" data-ru="Голосовое от B2B клиента · 0:34">B2B клиент дауыс хабары · 0:34</p>
+          </div>
+        </div>
+        <div class="audio-card w-full sm:w-[340px] bg-navydark rounded-2xl p-6 shadow-card flex items-center gap-4">
+          <button type="button" class="audio-play-btn shrink-0 w-14 h-14 rounded-full bg-gold flex items-center justify-center text-navy cursor-pointer hover:scale-105 transition-fast" aria-label="Аудио ойнату">
+            <svg viewBox="0 0 24 24" class="w-6 h-6" fill="currentColor"><path d="M8 5v14l11-7z"/></svg>
+          </button>
+          <div class="grow">
+            <div class="flex items-end gap-[3px] h-7 mb-1">
+              <span class="w-[3px] bg-gold/70 rounded-full" style="height:55%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:30%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:80%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:50%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:95%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:40%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:60%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:75%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:35%"></span><span class="w-[3px] bg-gold/70 rounded-full" style="height:50%"></span>
+            </div>
+            <p class="text-white/55 text-xs" data-kz="Апта сайын тапсырыс беретін клиент · 0:41" data-ru="Клиент с еженедельным заказом · 0:41">Апта сайын тапсырыс беретін клиент · 0:41</p>
+          </div>
+        </div>
+        <div class="w-full sm:w-[696px] mt-1 bg-lgold/90 border border-gold/30 rounded-2xl px-6 py-4 text-center">
+          <p class="text-navy/70 text-sm" data-kz="🎙 Аудио пікірлер жақын арада толық қосылады. Сіз де дауыс хабарын жіберуге дайынсыз ба?" data-ru="🎙 Аудио-отзывы будут добавлены полностью в ближайшее время. Готовы отправить голосовое?">Аудио пікірлер жақын арада толық қосылады. Сіз де дауыс хабарын жіберуге дайынсыз ба?</p>
+        </div>
+      </div>
+    </div>
+
+    <!-- 2GIS PANEL -->
+    <div id="panel-2gis" class="tab-panel" role="tabpanel" aria-labelledby="tab-2gis">
+      <div data-reveal class="max-w-xl mx-auto bg-navydark rounded-3xl p-8 sm:p-10 text-center shadow-card">
+        <div class="w-14 h-14 rounded-2xl bg-green-600/20 flex items-center justify-center mx-auto mb-5">
+          <svg viewBox="0 0 24 24" class="w-7 h-7 text-green-400" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 21s-7-5.4-7-11a7 7 0 1114 0c0 5.6-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></svg>
+        </div>
+        <h3 class="font-display text-white text-xl font-bold mb-2" data-kz="2GIS-тегі пікірлер" data-ru="Отзывы на 2GIS">2GIS-тегі пікірлер</h3>
+        <p class="text-white/60 text-sm leading-relaxed mb-7" data-kz="2GIS профилімізде нақты тұтынушы пікірлерін оқыңыз және өзіңіз де пікір қалдырыңыз. Виджет жақын арада осы жерге қосылады." data-ru="Читайте реальные отзывы клиентов на нашем профиле 2GIS и оставьте свой. Виджет будет добавлен здесь в ближайшее время.">2GIS профилімізде нақты тұтынушы пікірлерін оқыңыз және өзіңіз де пікір қалдырыңыз. Виджет жақын арада осы жерге қосылады.</p>
+        <a href="https://2gis.kz/almaty/search/Alakol%20Fish" target="_blank" rel="noopener" class="btn-gold transition-fast inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm shadow-gold-md cursor-pointer">
+          <span data-kz="2GIS-те барлық пікірлерді оқу" data-ru="Читать все отзывы на 2GIS">2GIS-те барлық пікірлерді оқу</span>
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+      </div>
+    </div>
+
+    <div data-reveal class="text-center mt-12">
+      <a href="https://wa.me/77019448969?text=Сэлеметсiз%20бе!%20Пiкiр%20қалдырғым%20келедi" target="_blank" rel="noopener" class="btn-gold transition-fast inline-flex items-center gap-2 rounded-full px-7 py-3.5 text-sm shadow-gold-md cursor-pointer">
+        <span data-kz="Сіз де жазыңыз" data-ru="Оставьте свой отзыв">Сіз де жазыңыз</span>
+        <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOUNDER ============ -->
+<section id="founder" class="relative py-20 sm:py-28 bg-white overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-[420px_1fr] gap-12 lg:gap-16 items-center">
+      <div data-reveal class="relative mx-auto lg:mx-0 w-full max-w-[360px]">
+        <div class="absolute -inset-3 rounded-[2rem] border-2 border-gold/40"></div>
+        <div class="relative rounded-[1.75rem] overflow-hidden shadow-navy-lg aspect-[4/5] bg-navy">
+          <img src="assets/images/founder.jpg" alt="Назира Алипова — Alakol Fish негізін қалаушы" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/50 via-transparent to-transparent"></div>
+        </div>
+        <a href="https://instagram.com/alipova.nazira" target="_blank" rel="noopener"
+           class="absolute -bottom-5 left-1/2 -translate-x-1/2 btn-gold transition-fast inline-flex items-center gap-2 rounded-full px-5 py-2.5 text-xs font-bold shadow-gold-md cursor-pointer whitespace-nowrap">
+          <svg viewBox="0 0 24 24" class="w-4 h-4" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.78.22 2.42.46.65.25 1.2.6 1.73 1.13.53.53.88 1.08 1.13 1.73.24.64.41 1.36.46 2.42C21.99 8.94 22 9.3 22 12c0 2.7-.01 3.06-.06 4.12-.05 1.06-.22 1.78-.46 2.42a4.9 4.9 0 01-1.13 1.73 4.9 4.9 0 01-1.73 1.13c-.64.24-1.36.41-2.42.46C15.06 21.99 14.7 22 12 22c-2.7 0-3.06-.01-4.12-.06-1.06-.05-1.78-.22-2.42-.46a4.9 4.9 0 01-1.73-1.13 4.9 4.9 0 01-1.13-1.73c-.24-.64-.41-1.36-.46-2.42C2.01 15.06 2 14.7 2 12c0-2.7.01-3.06.06-4.12.05-1.06.22-1.78.46-2.42.25-.65.6-1.2 1.13-1.73.53-.53 1.08-.88 1.73-1.13.64-.24 1.36-.41 2.42-.46C8.94 2.01 9.3 2 12 2zm0 1.8c-2.65 0-2.97.01-4.01.06-.96.04-1.48.2-1.83.34-.46.18-.78.39-1.13.73-.34.35-.55.67-.73 1.13-.14.35-.3.87-.34 1.83C3.91 9.03 3.9 9.35 3.9 12s.01 2.97.06 4.01c.04.96.2 1.48.34 1.83.18.46.39.78.73 1.13.35.34.67.55 1.13.73.35.14.87.3 1.83.34 1.04.05 1.36.06 4.01.06s2.97-.01 4.01-.06c.96-.04 1.48-.2 1.83-.34.46-.18.78-.39 1.13-.73.34-.35.55-.67.73-1.13.14-.35.3-.87.34-1.83.05-1.04.06-1.36.06-4.01s-.01-2.97-.06-4.01c-.04-.96-.2-1.48-.34-1.83a3.05 3.05 0 00-.73-1.13 3.05 3.05 0 00-1.13-.73c-.35-.14-.87-.3-1.83-.34C14.97 3.91 14.65 3.9 12 3.9zm0 3.07a5.03 5.03 0 110 10.06 5.03 5.03 0 010-10.06zm0 1.8a3.23 3.23 0 100 6.46 3.23 3.23 0 000-6.46zm5.4-2.4a1.13 1.13 0 110 2.26 1.13 1.13 0 010-2.26z"/></svg>
+          <span>@alipova.nazira</span>
+        </a>
+      </div>
+
+      <div data-reveal>
+        <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Жеке бренд" data-ru="Личный бренд">Жеке бренд</span>
+        <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3 mb-2">Назира Алипова</h2>
+        <p class="text-gold font-display text-lg italic mb-6" data-kz="Alakol Fish негізін қалаушы" data-ru="Основатель Alakol Fish">Alakol Fish негізін қалаушы</p>
+        <p class="text-ink/70 leading-[1.75] mb-5" data-kz="«Алакөлден Алматыға» — Назираның бизнес жолы Алакөл көлінің таза, суық суынан аулаған балықты Алматының үздік мейрамханаларына және әр үйге жеткізу арманынан басталды." data-ru="«От Алаколя до Алматы» — путь Назиры начался с мечты доставлять рыбу из чистых холодных вод озера Алаколь в лучшие рестораны Алматы и в каждый дом.">«Алакөлден Алматыға» — Назираның бизнес жолы Алакөл көлінің таза, суық суынан аулаған балықты Алматының үздік мейрамханаларына және әр үйге жеткізу арманынан басталды.</p>
+        <blockquote class="border-l-3 border-gold pl-5 mb-7">
+          <p class="font-display text-navy text-xl leading-snug italic" data-kz="«Ең жаңа балықты үйіңізге және мейрамханаңызға жеткіземіз»" data-ru="«Доставляем самую свежую рыбу к вам домой и в ваш ресторан»">«Ең жаңа балықты үйіңізге және мейрамханаңызға жеткіземіз»</p>
+        </blockquote>
+        <a href="https://wa.me/77019448969" target="_blank" rel="noopener" class="btn-outline-navy transition-fast inline-flex items-center gap-2 rounded-full px-6 py-3 text-sm font-bold cursor-pointer">
+          <span data-kz="Назирамен байланысу" data-ru="Связаться с Назирой">Назирамен байланысу</span>
+        </a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ B2C — HOME DELIVERY ============ -->
+<section id="b2c" class="relative py-20 sm:py-28 bg-lnavy overflow-hidden">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <div data-reveal>
+        <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Үй тапсырысы" data-ru="Заказ на дом">Үй тапсырысы</span>
+        <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3 mb-5 text-balance" data-kz="Үйге жеткіземіз · 1кг-дан · Алматы" data-ru="Доставляем на дом · от 1 кг · Алматы">Үйге жеткіземіз · 1кг-дан · Алматы</h2>
+        <p class="text-ink/70 leading-[1.7] mb-9 max-w-lg" data-kz="Жеке адамдар мен отбасыларға арналған — Алакөл балығын тек 1 кг-нан бастап тапсырыс беріп, үйіңізге жеткіздіріп алыңыз." data-ru="Для частных лиц и семей — заказывайте рыбу Алаколя от 1 кг и получайте доставку прямо домой.">Жеке адамдар мен отбасыларға арналған — Алакөл балығын тек 1 кг-нан бастап тапсырыс беріп, үйіңізге жеткіздіріп алыңыз.</p>
+
+        <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 mb-9">
+          <div class="bg-white rounded-2xl p-5 shadow-card">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold mb-3" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/></svg>
+            <p class="font-display text-navy font-bold text-sm" data-kz="Үйге дейін жеткізу" data-ru="Доставка до двери">Үйге дейін жеткізу</p>
+          </div>
+          <div class="bg-white rounded-2xl p-5 shadow-card">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold mb-3" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l8 4v6c0 5-3.5 8-8 10-4.5-2-8-5-8-10V6l8-4z"/><path d="M9 12l2 2 4-4"/></svg>
+            <p class="font-display text-navy font-bold text-sm" data-kz="1 кг-нан тапсырыс" data-ru="Заказ от 1 кг">1 кг-нан тапсырыс</p>
+          </div>
+          <div class="bg-white rounded-2xl p-5 shadow-card">
+            <svg viewBox="0 0 24 24" class="w-7 h-7 text-gold mb-3" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 15h-2v-2h2v2zm0-4h-2V7h2v6z"/></svg>
+            <p class="font-display text-navy font-bold text-sm" data-kz="Жаңа, тазаланған" data-ru="Свежее, очищенное">Жаңа, тазаланған</p>
+          </div>
+        </div>
+
+        <a href="https://wa.me/77019448969?text=Сэлеметсiз%20бе!%20Үйге%20балық%20тапсырыс%20беремiн" target="_blank" rel="noopener" class="btn-gold transition-fast inline-flex items-center gap-2 rounded-full px-7 py-4 text-base shadow-gold-md cursor-pointer">
+          <span data-kz="Үйге тапсырыс беру" data-ru="Заказать на дом">Үйге тапсырыс беру</span>
+          <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+        </a>
+      </div>
+
+      <div data-reveal class="relative">
+        <div class="rounded-[1.75rem] overflow-hidden shadow-navy-lg aspect-[4/5] max-w-md mx-auto bg-navy">
+          <img src="assets/images/founder-alt.jpg" alt="Үй дастарханына арналған Алакөл балығы" class="w-full h-full object-cover">
+          <div class="absolute inset-0 bg-gradient-to-t from-navy/70 via-navy/0 to-navy/10 mix-blend-multiply"></div>
+        </div>
+        <div class="absolute -bottom-6 -left-4 sm:left-2 bg-white rounded-2xl shadow-navy-lg px-6 py-4 flex items-center gap-3">
+          <span class="font-display text-gold text-3xl font-bold">1кг+</span>
+          <span class="text-ink/65 text-xs leading-tight"><span data-kz="бастап" data-ru="от">бастап</span><br><span data-kz="үй тапсырысы" data-ru="домашний заказ">үй тапсырысы</span></span>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ ORDER FORM ============ -->
+<section id="order" class="relative py-20 sm:py-28 bg-white overflow-hidden">
+  <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-reveal class="text-center max-w-xl mx-auto mb-12">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Конверсия" data-ru="Конверсия">Конверсия</span>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3" data-kz="Тапсырыс беру" data-ru="Оформить заказ">Тапсырыс беру</h2>
+      <p class="text-ink/70 leading-[1.7] mt-4" data-kz="Формаларды толтырыңыз — 5 минут ішінде WhatsApp арқылы хабарласамыз." data-ru="Заполните форму — мы свяжемся в WhatsApp в течение 5 минут.">Формаларды толтырыңыз — 5 минут ішінде WhatsApp арқылы хабарласамыз.</p>
+    </div>
+
+    <form data-reveal id="orderForm" class="bg-navy rounded-[1.75rem] p-6 sm:p-10 shadow-navy-lg relative overflow-hidden">
+      <div class="absolute inset-0 grain"></div>
+      <div class="relative">
+
+      <!-- type toggle -->
+      <fieldset class="mb-8">
+        <legend class="text-goldpale text-sm font-bold mb-3" data-kz="Мен кіммін?" data-ru="Кто я?">Мен кіммін?</legend>
+        <div class="grid grid-cols-2 gap-3">
+          <label class="type-option cursor-pointer">
+            <input type="radio" name="clientType" value="b2b" class="sr-only peer" checked>
+            <span class="flex items-center justify-center gap-2 rounded-xl border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/10 px-4 py-3.5 text-white font-bold text-sm transition-fast">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 21h18M5 21V7l7-4 7 4v14M9 9h.01M9 13h.01M15 9h.01M15 13h.01"/></svg>
+              <span data-kz="Мекеме (B2B)" data-ru="Заведение (B2B)">Мекеме (B2B)</span>
+            </span>
+          </label>
+          <label class="type-option cursor-pointer">
+            <input type="radio" name="clientType" value="b2c" class="sr-only peer">
+            <span class="flex items-center justify-center gap-2 rounded-xl border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/10 px-4 py-3.5 text-white font-bold text-sm transition-fast">
+              <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M3 9l9-7 9 7v11a1 1 0 01-1 1h-5v-7H9v7H4a1 1 0 01-1-1z"/></svg>
+              <span data-kz="Жеке адам (B2C)" data-ru="Частное лицо (B2C)">Жеке адам (B2C)</span>
+            </span>
+          </label>
+        </div>
+      </fieldset>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-2">
+        <div>
+          <label for="f-name" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Аты / Мекеме атауы" data-ru="Имя / Название заведения">Аты / Мекеме атауы</label>
+          <input id="f-name" name="name" type="text" required autocomplete="name"
+            class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink font-serif outline-none transition-fast" placeholder="Аты-жөні немесе мекеме">
+        </div>
+        <div>
+          <label for="f-phone" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Телефон" data-ru="Телефон">Телефон</label>
+          <input id="f-phone" name="phone" type="tel" required inputmode="tel" autocomplete="tel" placeholder="+7 (___) ___-__-__"
+            class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink outline-none transition-fast">
+        </div>
+      </div>
+
+      <div id="b2bFields" class="grid grid-cols-1 sm:grid-cols-2 gap-5 mb-2">
+        <div>
+          <label for="f-orgtype" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Мекеме түрі" data-ru="Тип заведения">Мекеме түрі</label>
+          <select id="f-orgtype" name="orgType" class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink outline-none transition-fast cursor-pointer">
+            <option data-kz="Ресторан" data-ru="Ресторан">Ресторан</option>
+            <option data-kz="Кафе" data-ru="Кафе">Кафе</option>
+            <option data-kz="Асхана" data-ru="Столовая">Асхана</option>
+            <option data-kz="Гостиница" data-ru="Гостиница">Гостиница</option>
+            <option data-kz="Басқа" data-ru="Другое">Басқа</option>
+          </select>
+        </div>
+        <div>
+          <label for="f-freq" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Жеткізу жиілігі" data-ru="Частота доставки">Жеткізу жиілігі</label>
+          <select id="f-freq" name="frequency" class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink outline-none transition-fast cursor-pointer">
+            <option data-kz="1 рет" data-ru="1 раз">1 рет</option>
+            <option data-kz="Аптасына 1-2" data-ru="1-2 раза в неделю">Аптасына 1-2</option>
+            <option data-kz="Аптасына 3+" data-ru="3+ раза в неделю">Аптасына 3+</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="mb-2">
+        <label class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-3" data-kz="Өнім таңдау" data-ru="Выбор продукции">Өнім таңдау</label>
+        <div class="grid grid-cols-2 sm:grid-cols-5 gap-2.5">
+          <label class="prod-option cursor-pointer">
+            <input type="checkbox" name="products" value="Судак крупный" class="sr-only peer">
+            <span class="flex items-center justify-center text-center rounded-lg border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/15 px-2 py-3 text-white text-xs font-semibold transition-fast leading-tight">Судак крупный</span>
+          </label>
+          <label class="prod-option cursor-pointer">
+            <input type="checkbox" name="products" value="Судак средний" class="sr-only peer">
+            <span class="flex items-center justify-center text-center rounded-lg border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/15 px-2 py-3 text-white text-xs font-semibold transition-fast leading-tight">Судак средний</span>
+          </label>
+          <label class="prod-option cursor-pointer">
+            <input type="checkbox" name="products" value="Сазан средний" class="sr-only peer">
+            <span class="flex items-center justify-center text-center rounded-lg border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/15 px-2 py-3 text-white text-xs font-semibold transition-fast leading-tight">Сазан средний</span>
+          </label>
+          <label class="prod-option cursor-pointer">
+            <input type="checkbox" name="products" value="Окунь" class="sr-only peer">
+            <span class="flex items-center justify-center text-center rounded-lg border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/15 px-2 py-3 text-white text-xs font-semibold transition-fast leading-tight">Окунь</span>
+          </label>
+          <label class="prod-option cursor-pointer">
+            <input type="checkbox" name="products" value="Філе" class="sr-only peer">
+            <span class="flex items-center justify-center text-center rounded-lg border-2 border-white/15 peer-checked:border-gold peer-checked:bg-gold/15 px-2 py-3 text-white text-xs font-semibold transition-fast leading-tight">Філе</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 gap-5 my-6">
+        <div>
+          <label for="f-qty" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Мөлшер (кг)" data-ru="Объём (кг)">Мөлшер (кг)</label>
+          <input id="f-qty" name="qty" type="number" min="1" required inputmode="numeric" placeholder="10"
+            class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink outline-none transition-fast">
+        </div>
+        <div>
+          <label for="f-note" class="block text-goldpale text-xs font-bold uppercase tracking-wide mb-2" data-kz="Пікір / сұрақ (ерікті)" data-ru="Комментарий (необязательно)">Пікір / сұрақ (ерікті)</label>
+          <input id="f-note" name="note" type="text" class="w-full rounded-xl bg-white/95 border-2 border-transparent focus:border-gold px-4 py-3 text-ink outline-none transition-fast">
+        </div>
+      </div>
+
+      <button type="submit" class="btn-gold transition-fast w-full flex items-center justify-center gap-2 rounded-full px-7 py-4 text-base shadow-gold-md cursor-pointer">
+        <span id="submitLabel" data-kz="ПРАЙС АЛУ" data-ru="ПОЛУЧИТЬ ПРАЙС">ПРАЙС АЛУ</span>
+        <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+      </button>
+      <p class="text-white/40 text-xs text-center mt-4" data-kz="Жіберу — WhatsApp арқылы хабарласуға келісім білдіреді" data-ru="Отправка — согласие на связь через WhatsApp">Жіберу — WhatsApp арқылы хабарласуға келісім білдіреді</p>
+      </div>
+    </form>
+  </div>
+
+  <!-- toast -->
+  <div id="toast" role="status" aria-live="polite" class="fixed bottom-6 left-1/2 -translate-x-1/2 z-[60] bg-navy text-white px-6 py-4 rounded-xl shadow-navy-lg flex items-center gap-3 opacity-0 pointer-events-none transition-fast translate-y-4">
+    <svg viewBox="0 0 24 24" class="w-5 h-5 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 12l2 2 4-4M21 12a9 9 0 11-18 0 9 9 0 0118 0z"/></svg>
+    <span class="text-sm font-medium" data-kz="Рахмет! 5 минутта хабарласамыз" data-ru="Спасибо! Свяжемся в течение 5 минут">Рахмет! 5 минутта хабарласамыз</span>
+  </div>
+</section>
+
+<!-- ============ FAQ ============ -->
+<section id="faq" class="relative py-20 sm:py-28 bg-lnavy">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div data-reveal class="text-center mb-12">
+      <span class="text-gold font-bold text-xs uppercase tracking-[0.18em]" data-kz="Қарсылықтар" data-ru="Возражения">Қарсылықтар</span>
+      <h2 class="font-display text-navy text-3xl sm:text-4xl font-bold tracking-[-0.02em] mt-3" data-kz="Жиі қойылатын сұрақтар" data-ru="Часто задаваемые вопросы">Жиі қойылатын сұрақтар</h2>
+    </div>
+
+    <div data-reveal class="space-y-3">
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast" open>
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Минималды оптом тапсырыс?" data-ru="Минимальный опт. заказ?">Минималды оптом тапсырыс?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="B2B оптом — 10 кг-дан. Жеке (B2C) — 1 кг-дан бастап." data-ru="B2B опт — от 10 кг. Частным лицам (B2C) — от 1 кг.">B2B оптом — 10 кг-дан. Жеке (B2C) — 1 кг-дан бастап.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Жеткізу кестесі?" data-ru="График доставки?">Жеткізу кестесі?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="Алматы бойынша аптасына 3-5 рет. Дүйсенбі / Сәрсенбі / Жұма." data-ru="По Алматы 3-5 раз в неделю. Понедельник / Среда / Пятница.">Алматы бойынша аптасына 3-5 рет. Дүйсенбі / Сәрсенбі / Жұма.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Прайс-лист қалай алуға болады?" data-ru="Как получить прайс-лист?">Прайс-лист қалай алуға болады?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="«Прайс алу» батырмасын басыңыз — WhatsApp арқылы PDF жіберіледі." data-ru="Нажмите «Получить прайс» — PDF отправим через WhatsApp.">«Прайс алу» батырмасын басыңыз — WhatsApp арқылы PDF жіберіледі.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Сапа сертификаты бар ма?" data-ru="Есть ли сертификат качества?">Сапа сертификаты бар ма?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="Иә. Барлық өнімдер ветеринарлық сертификатпен жеткізіледі." data-ru="Да. Вся продукция поставляется с ветеринарным сертификатом.">Иә. Барлық өнімдер ветеринарлық сертификатпен жеткізіледі.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Корпоративті шарт мүмкін бе?" data-ru="Возможен корпоративный договор?">Корпоративті шарт мүмкін бе?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="Ресторандармен ресми шарт жасалады. WhatsApp арқылы хабарласыңыз." data-ru="С ресторанами заключается официальный договор. Пишите в WhatsApp.">Ресторандармен ресми шарт жасалады. WhatsApp арқылы хабарласыңыз.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="Партияны алдын-ала брондауға болады ма?" data-ru="Можно забронировать партию заранее?">Партияны алдын-ала брондауға болады ма?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="Иә — аптасына 1 рет брондасаңыз тапшылықсыз жеткізу кепілдіктеміз." data-ru="Да — при бронировании 1 раз в неделю гарантируем поставку без дефицита.">Иә — аптасына 1 рет брондасаңыз тапшылықсыз жеткізу кепілдіктеміз.</div>
+      </details>
+
+      <details class="faq-item group bg-white rounded-2xl shadow-card open:bg-navy transition-fast">
+        <summary class="cursor-pointer list-none flex items-center justify-between gap-4 px-6 py-5 font-display font-bold text-navy group-open:text-white">
+          <span data-kz="2GIS-те пікір қалдыруға болады ма?" data-ru="Можно оставить отзыв на 2GIS?">2GIS-те пікір қалдыруға болады ма?</span>
+          <span class="faq-icon shrink-0 w-7 h-7 rounded-full bg-gold text-navy flex items-center justify-center text-lg font-bold transition-fast">+</span>
+        </summary>
+        <div class="px-6 pb-5 text-ink/70 group-open:text-white/75 text-sm leading-relaxed" data-kz="Иә! 2GIS-тегі отзывтар блогымызда сілтеме бар." data-ru="Да! В блоке отзывов есть ссылка на наш профиль 2GIS.">Иә! 2GIS-тегі отзывтар блогымызда сілтеме бар.</div>
+      </details>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FOOTER ============ -->
+<footer id="footer" class="relative bg-navydark text-white pt-16 pb-8 overflow-hidden">
+  <div class="absolute inset-0 grain"></div>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-10 pb-12 border-b border-white/10">
+      <div>
+        <img src="assets/images/logo.jpg" alt="Alakol Fish" class="h-14 w-auto rounded-md mb-4">
+        <p class="text-white/55 text-sm leading-relaxed" data-kz="Алакөлдің дәмін Алматының үздік мекемелеріне жеткіземіз." data-ru="Доставляем вкус Алаколя в лучшие заведения Алматы.">Алакөлдің дәмін Алматының үздік мекемелеріне жеткіземіз.</p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-goldpale mb-4" data-kz="Байланыс" data-ru="Контакты">Байланыс</h4>
+        <ul class="space-y-3 text-sm text-white/65">
+          <li class="flex items-center gap-2.5">
+            <svg viewBox="0 0 24 24" class="w-4 h-4 text-gold shrink-0" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2z"/></svg>
+            <a href="https://wa.me/77019448969" target="_blank" rel="noopener" class="hover:text-goldlight transition-fast cursor-pointer">WhatsApp: +7 701 944 8969</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <svg viewBox="0 0 24 24" class="w-4 h-4 text-gold shrink-0" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.362 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.338 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+            <a href="tel:+77019448969" class="hover:text-goldlight transition-fast cursor-pointer">+7 701 944 8969</a>
+          </li>
+          <li class="flex items-center gap-2.5">
+            <svg viewBox="0 0 24 24" class="w-4 h-4 text-gold shrink-0" fill="currentColor"><path d="M12 2c2.7 0 3.06.01 4.12.06 1.06.05 1.78.22 2.42.46.65.25 1.2.6 1.73 1.13.53.53.88 1.08 1.13 1.73.24.64.41 1.36.46 2.42C21.99 8.94 22 9.3 22 12c0 2.7-.01 3.06-.06 4.12-.05 1.06-.22 1.78-.46 2.42a4.9 4.9 0 01-1.13 1.73 4.9 4.9 0 01-1.73 1.13c-.64.24-1.36.41-2.42.46C15.06 21.99 14.7 22 12 22c-2.7 0-3.06-.01-4.12-.06-1.06-.05-1.78-.22-2.42-.46a4.9 4.9 0 01-1.73-1.13 4.9 4.9 0 01-1.13-1.73c-.24-.64-.41-1.36-.46-2.42C2.01 15.06 2 14.7 2 12c0-2.7.01-3.06.06-4.12.05-1.06.22-1.78.46-2.42.25-.65.6-1.2 1.13-1.73.53-.53 1.08-.88 1.73-1.13.64-.24 1.36-.41 2.42-.46C8.94 2.01 9.3 2 12 2z"/></svg>
+            <a href="https://instagram.com/alipova.nazira" target="_blank" rel="noopener" class="hover:text-goldlight transition-fast cursor-pointer">@alipova.nazira</a>
+          </li>
+        </ul>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-goldpale mb-4" data-kz="Мекен-жай" data-ru="Адрес">Мекен-жай</h4>
+        <p class="text-sm text-white/65 leading-relaxed flex items-start gap-2.5">
+          <svg viewBox="0 0 24 24" class="w-4 h-4 text-gold shrink-0 mt-0.5" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 1118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span data-kz="Алматы қаласы, Қазақстан" data-ru="г. Алматы, Казахстан">Алматы қаласы, Қазақстан</span>
+        </p>
+      </div>
+      <div>
+        <h4 class="font-display font-bold text-goldpale mb-4" data-kz="Сілтемелер" data-ru="Ссылки">Сілтемелер</h4>
+        <ul class="space-y-2.5 text-sm text-white/65">
+          <li><a href="#catalog" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Өнімдер" data-ru="Продукция">Өнімдер</a></li>
+          <li><a href="#pricing" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Прайс-лист" data-ru="Прайс-лист">Прайс-лист</a></li>
+          <li><a href="#reviews" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Пікірлер" data-ru="Отзывы">Пікірлер</a></li>
+          <li><a href="#faq" class="hover:text-goldlight transition-fast cursor-pointer" data-kz="Сұрақтар" data-ru="Вопросы">Сұрақтар</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="pt-7 flex flex-col sm:flex-row items-center justify-between gap-3 text-white/40 text-xs">
+      <p>&copy; 2026 Alakol Fish. <span data-kz="Барлық құқықтар қорғалған." data-ru="Все права защищены.">Барлық құқықтар қорғалған.</span></p>
+      <p data-kz="Алматы, Қазақстан" data-ru="Алматы, Казахстан">Алматы, Қазақстан</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ============ FLOATING WHATSAPP ============ -->
+<a href="https://wa.me/77019448969?text=Сэлеметсiз%20бе!%20Aqparat%20алғым%20келедi"
+   target="_blank" rel="noopener" aria-label="WhatsApp арқылы хабарласу"
+   class="fixed bottom-5 right-5 z-50 w-16 h-16 rounded-full bg-[#25D366] text-white flex items-center justify-center shadow-[0_10px_28px_-6px_rgba(37,211,102,0.6)] hover:scale-105 transition-fast cursor-pointer">
+  <span class="absolute inset-0 rounded-full bg-[#25D366]/60 animate-ping"></span>
+  <svg viewBox="0 0 24 24" class="relative w-8 h-8" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0012 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 014 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+</a>
+
+<script>
+(function(){
+  "use strict";
+  var reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  /* ---------- LANGUAGE TOGGLE ---------- */
+  var LANG_KEY = 'alakolLang';
+  function applyLang(lang){
+    document.documentElement.setAttribute('lang', lang === 'ru' ? 'ru' : 'kk');
+    document.documentElement.setAttribute('data-lang', lang);
+    document.querySelectorAll('[data-kz]').forEach(function(el){
+      var val = lang === 'ru' ? el.getAttribute('data-ru') : el.getAttribute('data-kz');
+      if (val !== null) el.textContent = val;
+    });
+    try { localStorage.setItem(LANG_KEY, lang); } catch(e){}
+  }
+  function currentLang(){
+    return document.documentElement.getAttribute('data-lang') || 'kk';
+  }
+  function toggleLang(){
+    applyLang(currentLang() === 'kk' ? 'ru' : 'kk');
+  }
+  document.getElementById('langToggle').addEventListener('click', toggleLang);
+  document.getElementById('langToggleMobile').addEventListener('click', toggleLang);
+  var savedLang = 'kk';
+  try { savedLang = localStorage.getItem(LANG_KEY) || 'kk'; } catch(e){}
+  applyLang(savedLang);
+
+  /* ---------- SCROLL REVEAL ---------- */
+  if ('IntersectionObserver' in window && !reducedMotion) {
+    var revealObserver = new IntersectionObserver(function(entries){
+      entries.forEach(function(entry){
+        if (entry.isIntersecting) {
+          entry.target.classList.add('is-visible');
+          revealObserver.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -40px 0px' });
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ revealObserver.observe(el); });
+  } else {
+    document.querySelectorAll('[data-reveal]').forEach(function(el){ el.classList.add('is-visible'); });
+  }
+
+  /* ---------- MOBILE MENU ---------- */
+  var hamburgerBtn = document.getElementById('hamburgerBtn');
+  var mobileMenu = document.getElementById('mobileMenu');
+  var mobileCloseBtn = document.getElementById('mobileCloseBtn');
+  var hamburgerLines = hamburgerBtn.querySelectorAll('.hamburger-line');
+
+  function openMenu(){
+    mobileMenu.classList.add('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', 'true');
+    document.body.style.overflow = 'hidden';
+    hamburgerLines[0].style.transform = 'translateY(7px) rotate(45deg)';
+    hamburgerLines[1].style.opacity = '0';
+    hamburgerLines[2].style.transform = 'translateY(-7px) rotate(-45deg)';
+  }
+  function closeMenu(){
+    mobileMenu.classList.remove('is-open');
+    hamburgerBtn.setAttribute('aria-expanded', 'false');
+    document.body.style.overflow = '';
+    hamburgerLines[0].style.transform = '';
+    hamburgerLines[1].style.opacity = '';
+    hamburgerLines[2].style.transform = '';
+  }
+  hamburgerBtn.addEventListener('click', function(){
+    mobileMenu.classList.contains('is-open') ? closeMenu() : openMenu();
+  });
+  mobileCloseBtn.addEventListener('click', closeMenu);
+  document.querySelectorAll('.mobile-link').forEach(function(a){ a.addEventListener('click', closeMenu); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+
+  /* ---------- HEADER SCROLL SHADOW ---------- */
+  var header = document.getElementById('siteHeader');
+  window.addEventListener('scroll', function(){
+    header.classList.toggle('shadow-navy-lg', window.scrollY > 8);
+  }, { passive: true });
+
+  /* ---------- REVIEW TABS ---------- */
+  var tabBtns = document.querySelectorAll('.tab-btn');
+  tabBtns.forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var target = btn.getAttribute('data-tab');
+      tabBtns.forEach(function(b){ b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
+      document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('is-active'); });
+      document.getElementById('panel-' + target).classList.add('is-active');
+    });
+  });
+
+  /* ---------- INFINITE CAROUSEL ---------- */
+  function InfiniteRow(viewport, speed){
+    this.viewport = viewport;
+    this.track = viewport.querySelector('[data-track]');
+    this.speed = speed || 38;
+    this.offset = 0;
+    this.half = 0;
+    this.paused = false;
+    this.lastTs = null;
+    this.resumeTimer = null;
+    this._setup();
+  }
+  InfiniteRow.prototype._setup = function(){
+    var originals = Array.prototype.slice.call(this.track.children);
+    originals.forEach(function(node){ this.track.appendChild(node.cloneNode(true)); }, this);
+    var self = this;
+    setTimeout(function(){
+      self.half = self.track.scrollWidth / 2;
+      if (!reducedMotion) requestAnimationFrame(self._tick.bind(self));
+    }, 60);
+    this.viewport.addEventListener('mouseenter', function(){ self.paused = true; });
+    this.viewport.addEventListener('mouseleave', function(){ self.paused = false; });
+    this.viewport.addEventListener('touchstart', function(){ self.paused = true; }, { passive: true });
+    this.viewport.addEventListener('touchend', function(){
+      clearTimeout(self.resumeTimer);
+      self.resumeTimer = setTimeout(function(){ self.paused = false; }, 2200);
+    }, { passive: true });
+  };
+  InfiniteRow.prototype._tick = function(ts){
+    if (this.lastTs === null) this.lastTs = ts;
+    var dt = (ts - this.lastTs) / 1000;
+    this.lastTs = ts;
+    if (!this.paused && this.half > 0) {
+      this.offset += this.speed * dt;
+      if (this.offset >= this.half) this.offset -= this.half;
+      this.track.style.transform = 'translateX(-' + this.offset + 'px)';
+    }
+    requestAnimationFrame(this._tick.bind(this));
+  };
+  InfiniteRow.prototype.nudge = function(dir){
+    if (!this.half) return;
+    var firstCard = this.track.children[0];
+    var w = firstCard.getBoundingClientRect().width + 20;
+    this.offset += dir * w;
+    if (this.offset < 0) this.offset += this.half;
+    if (this.offset >= this.half) this.offset -= this.half;
+    this.track.style.transition = 'transform 420ms cubic-bezier(.22,.61,.36,1)';
+    this.track.style.transform = 'translateX(-' + this.offset + 'px)';
+    var self = this;
+    this.paused = true;
+    clearTimeout(this.resumeTimer);
+    setTimeout(function(){ self.track.style.transition = ''; }, 440);
+    this.resumeTimer = setTimeout(function(){ self.paused = false; }, 3200);
+  };
+
+  var carousels = {};
+  document.querySelectorAll('[data-carousel]').forEach(function(viewport){
+    var key = viewport.getAttribute('data-carousel');
+    carousels[key] = new InfiniteRow(viewport, 34);
+  });
+  document.querySelectorAll('[data-arrow]').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var key = btn.getAttribute('data-arrow');
+      var dir = parseInt(btn.getAttribute('data-dir'), 10);
+      if (carousels[key]) carousels[key].nudge(dir);
+    });
+  });
+
+  /* ---------- VIDEO CLICK-TO-PLAY ---------- */
+  document.querySelectorAll('.video-card').forEach(function(card){
+    var video = card.querySelector('video');
+    var overlay = card.querySelector('.play-overlay');
+    overlay.addEventListener('click', function(){
+      if (video.paused) {
+        document.querySelectorAll('.video-card video').forEach(function(v){ if (v !== video) v.pause(); });
+        document.querySelectorAll('.video-card .play-overlay').forEach(function(o){ if (o !== overlay) o.style.display = 'flex'; });
+        video.muted = false;
+        video.play();
+        overlay.style.display = 'none';
+      } else {
+        video.pause();
+        overlay.style.display = 'flex';
+      }
+    });
+    video.addEventListener('click', function(){ overlay.dispatchEvent(new Event('click')); });
+    video.addEventListener('ended', function(){ overlay.style.display = 'flex'; });
+  });
+
+  /* ---------- AUDIO PLACEHOLDER ---------- */
+  document.querySelectorAll('.audio-play-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      showToast(currentLang() === 'ru' ? 'Аудио-отзыв скоро будет доступен' : 'Аудио пікір жақын арада қосылады');
+    });
+  });
+
+  /* ---------- TOAST ---------- */
+  var toast = document.getElementById('toast');
+  var toastTimer = null;
+  function showToast(customText){
+    if (customText) {
+      toast.querySelector('span').textContent = customText;
+    }
+    toast.classList.remove('opacity-0', 'translate-y-4');
+    toast.classList.add('opacity-100', 'translate-y-0');
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function(){
+      toast.classList.add('opacity-0', 'translate-y-4');
+      toast.classList.remove('opacity-100', 'translate-y-0');
+    }, 4200);
+  }
+
+  /* ---------- PHONE MASK ---------- */
+  var phoneInput = document.getElementById('f-phone');
+  phoneInput.addEventListener('input', function(){
+    var digits = phoneInput.value.replace(/\D/g, '').replace(/^7/, '');
+    digits = digits.slice(0, 10);
+    var out = '+7';
+    if (digits.length > 0) out += ' (' + digits.slice(0,3);
+    if (digits.length >= 3) out += ')';
+    if (digits.length > 3) out += ' ' + digits.slice(3,6);
+    if (digits.length > 6) out += '-' + digits.slice(6,8);
+    if (digits.length > 8) out += '-' + digits.slice(8,10);
+    phoneInput.value = out;
+  });
+
+  /* ---------- ORDER FORM: B2B / B2C TOGGLE ---------- */
+  var b2bFields = document.getElementById('b2bFields');
+  var submitLabel = document.getElementById('submitLabel');
+  var qtyInput = document.getElementById('f-qty');
+  document.querySelectorAll('input[name="clientType"]').forEach(function(radio){
+    radio.addEventListener('change', function(){
+      var isB2B = radio.value === 'b2b' && radio.checked;
+      if (radio.checked) {
+        b2bFields.style.display = radio.value === 'b2b' ? '' : 'none';
+        submitLabel.setAttribute('data-kz', radio.value === 'b2b' ? 'ПРАЙС АЛУ' : 'ТАПСЫРЫС БЕРУ');
+        submitLabel.setAttribute('data-ru', radio.value === 'b2b' ? 'ПОЛУЧИТЬ ПРАЙС' : 'ОФОРМИТЬ ЗАКАЗ');
+        submitLabel.textContent = currentLang() === 'ru' ? submitLabel.getAttribute('data-ru') : submitLabel.getAttribute('data-kz');
+        qtyInput.placeholder = radio.value === 'b2b' ? '10' : '1';
+        qtyInput.min = radio.value === 'b2b' ? '10' : '1';
+      }
+    });
+  });
+
+  /* ---------- ORDER FORM SUBMIT ---------- */
+  var orderForm = document.getElementById('orderForm');
+  orderForm.addEventListener('submit', function(e){
+    e.preventDefault();
+    var fd = new FormData(orderForm);
+    var type = fd.get('clientType') === 'b2b' ? 'B2B / Мекеме' : 'B2C / Жеке адам';
+    var products = fd.getAll('products');
+    var lines = [
+      'Жаңа тапсырыс — Alakol Fish',
+      'Түрі: ' + type,
+      'Аты/Мекеме: ' + (fd.get('name') || '-'),
+      'Телефон: ' + (fd.get('phone') || '-')
+    ];
+    if (fd.get('clientType') === 'b2b') {
+      lines.push('Мекеме түрі: ' + (fd.get('orgType') || '-'));
+      lines.push('Жеткізу жиілігі: ' + (fd.get('frequency') || '-'));
+    }
+    lines.push('Өнім: ' + (products.length ? products.join(', ') : '-'));
+    lines.push('Мөлшер: ' + (fd.get('qty') || '-') + ' кг');
+    if (fd.get('note')) lines.push('Пікір: ' + fd.get('note'));
+
+    var text = encodeURIComponent(lines.join('\n'));
+    window.open('https://wa.me/77019448969?text=' + text, '_blank', 'noopener');
+    showToast();
+    orderForm.reset();
+    document.querySelector('input[name="clientType"][value="b2b"]').checked = true;
+    b2bFields.style.display = '';
+  });
+
+  /* ---------- ANALYTICS STUBS (GA4 / Yandex.Metrika) ---------- */
+  window.dataLayer = window.dataLayer || [];
+  function gaEvent(name, params){ window.dataLayer.push({ event: name, ...params }); }
+  document.querySelectorAll('a[href^="https://wa.me"]').forEach(function(a){
+    a.addEventListener('click', function(){ gaEvent('whatsapp_click', { location: a.closest('section') ? a.closest('section').id : 'global' }); });
+  });
+  orderForm.addEventListener('submit', function(){ gaEvent('form_submit', {}); });
+
+})();
+</script>
+</body>
+</html>

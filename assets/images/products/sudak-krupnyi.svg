@@ -1,0 +1,28 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldKrupnyi" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"/>
+      <stop offset="55%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#9C7320"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldKrupnyi)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- body: long streamlined pike-perch -->
+    <path d="M30,150 C70,90 150,68 230,80 C300,90 350,112 392,128 C350,140 300,150 250,150 C300,158 350,168 392,128" />
+    <path d="M30,150 C70,210 150,232 230,220 C300,210 350,188 392,128" />
+    <!-- spiky dorsal fin (zander signature) -->
+    <path d="M150,82 L158,48 L168,84 L178,46 L188,86 L198,50 L208,88 L218,52 L228,90" />
+    <!-- pointed jaw -->
+    <path d="M30,150 L8,142 M30,150 L8,158" />
+    <!-- tail -->
+    <path d="M392,128 L420,98 M392,128 L420,158" />
+    <!-- gill line -->
+    <path d="M92,108 C100,128 100,172 92,192" stroke-width="2.4"/>
+    <!-- lower fin -->
+    <path d="M210,206 L222,232 M236,202 L250,226" stroke-width="2.4"/>
+    <!-- eye -->
+    <circle cx="58" cy="128" r="5.5" fill="url(#goldKrupnyi)" stroke="none"/>
+    <!-- water swoosh -->
+    <path d="M20,236 C90,222 150,250 230,236 C300,224 350,244 410,232" stroke-width="2" opacity="0.55"/>
+  </g>
+</svg>

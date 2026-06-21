@@ -1,0 +1,7 @@
+node_modules/
+temporary screenshots/
+serve.log
+*.log
+.DS_Store
+Thumbs.db
+.claude/

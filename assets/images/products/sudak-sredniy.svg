@@ -1,0 +1,22 @@
+<svg viewBox="0 0 420 260" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="goldSredniy" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F3D27A"/>
+      <stop offset="55%" stop-color="#D4A437"/>
+      <stop offset="100%" stop-color="#9C7320"/>
+    </linearGradient>
+  </defs>
+  <g fill="none" stroke="url(#goldSredniy)" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+    <!-- smaller / shorter body -->
+    <path d="M55,150 C90,104 160,86 230,96 C282,104 322,118 360,130 C322,142 282,150 244,148 C282,156 322,164 360,130" />
+    <path d="M55,150 C90,196 160,214 230,204 C282,196 322,182 360,130" />
+    <!-- spiky dorsal fin -->
+    <path d="M158,98 L165,70 L174,100 L182,68 L191,102 L200,72 L209,104" />
+    <path d="M55,150 L36,144 M55,150 L36,156" />
+    <path d="M360,130 L384,108 M360,130 L384,152" />
+    <path d="M108,116 C116,130 116,168 108,182" stroke-width="2.2"/>
+    <path d="M218,196 L228,216" stroke-width="2.2"/>
+    <circle cx="80" cy="128" r="5" fill="url(#goldSredniy)" stroke="none"/>
+    <path d="M40,228 C100,216 150,238 220,228 C280,218 320,234 380,224" stroke-width="2" opacity="0.55"/>
+  </g>
+</svg>
