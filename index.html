@@ -101,6 +101,9 @@
   details[open] > .accordion-content{ }
   summary::-webkit-details-marker{ display:none; }
 
+  .lang-seg{ color:rgba(255,255,255,.55); }
+  .lang-seg.active{ background:#B8962E; color:#0D2B6E; }
+
   .star-gold{ color:#B8962E; }
   .scrollbar-none::-webkit-scrollbar{ display:none; }
   .scrollbar-none{ scrollbar-width:none; }
@@ -126,8 +129,9 @@
 
     <div class="flex items-center gap-3">
       <button id="langToggle" type="button" aria-label="Тілді ауыстыру / Переключить язык"
-        class="hidden sm:flex items-center gap-1 text-xs font-bold tracking-wide text-white border border-white/25 rounded-full px-3 py-1.5 hover:border-goldlight hover:text-goldlight transition-fast cursor-pointer">
-        <span data-lang-label-kk>ҚАЗ</span><span class="opacity-50">/</span><span data-lang-label-ru>РУС</span>
+        class="hidden sm:flex items-center gap-0.5 text-xs font-bold tracking-wide border border-white/25 rounded-full p-1 cursor-pointer">
+        <span data-lang-label-kk class="lang-seg rounded-full px-2.5 py-1 transition-fast">ҚАЗ</span>
+        <span data-lang-label-ru class="lang-seg rounded-full px-2.5 py-1 transition-fast">РУС</span>
       </button>
 
       <a href="https://wa.me/77019448969?text=Сал%D0%B5м%D0%B5тс%D1%96з%D0%B1е!%20Пра%D0%B9с-лист%20а%D0%BB%D1%83%20%D0%BA%D0%B5%D1%80%D0%B5%D0%BA"
@@ -170,8 +174,9 @@
     </nav>
 
     <div class="mt-auto pt-6 flex flex-col gap-3">
-      <button id="langToggleMobile" type="button" class="flex items-center justify-center gap-2 text-sm font-bold text-white border border-white/25 rounded-full px-4 py-2.5 cursor-pointer">
-        <span data-lang-label-kk>ҚАЗ</span><span class="opacity-50">/</span><span data-lang-label-ru>РУС</span>
+      <button id="langToggleMobile" type="button" class="flex items-center justify-center gap-0.5 text-sm font-bold border border-white/25 rounded-full p-1 cursor-pointer">
+        <span data-lang-label-kk class="lang-seg rounded-full px-4 py-2 transition-fast">ҚАЗ</span>
+        <span data-lang-label-ru class="lang-seg rounded-full px-4 py-2 transition-fast">РУС</span>
       </button>
       <a href="https://wa.me/77019448969" target="_blank" rel="noopener" class="btn-whatsapp flex items-center justify-center gap-2 rounded-full px-5 py-3 text-sm font-bold cursor-pointer">
         <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
@@ -995,6 +1000,12 @@
       var val = lang === 'ru' ? el.getAttribute('data-ru') : el.getAttribute('data-kz');
       if (val !== null) el.textContent = val;
     });
+    document.querySelectorAll('[data-lang-label-kk]').forEach(function(el){
+      el.classList.toggle('active', lang !== 'ru');
+    });
+    document.querySelectorAll('[data-lang-label-ru]').forEach(function(el){
+      el.classList.toggle('active', lang === 'ru');
+    });
     try { localStorage.setItem(LANG_KEY, lang); } catch(e){}
   }
   function currentLang(){
@@ -1066,7 +1077,14 @@
       var target = btn.getAttribute('data-tab');
       tabBtns.forEach(function(b){ b.setAttribute('aria-selected', b === btn ? 'true' : 'false'); });
       document.querySelectorAll('.tab-panel').forEach(function(p){ p.classList.remove('is-active'); });
-      document.getElementById('panel-' + target).classList.add('is-active');
+      var panel = document.getElementById('panel-' + target);
+      panel.classList.add('is-active');
+      requestAnimationFrame(function(){
+        panel.querySelectorAll('[data-carousel]').forEach(function(viewport){
+          var key = viewport.getAttribute('data-carousel');
+          if (carousels[key]) carousels[key].recalc();
+        });
+      });
     });
   });
 
@@ -1109,6 +1127,11 @@
     }
     requestAnimationFrame(this._tick.bind(this));
   };
+  InfiniteRow.prototype.recalc = function(){
+    if (this.viewport.offsetWidth > 0) {
+      this.half = this.track.scrollWidth / 2;
+    }
+  };
   InfiniteRow.prototype.nudge = function(dir){
     if (!this.half) return;
     var firstCard = this.track.children[0];
@@ -1136,6 +1159,14 @@
       var dir = parseInt(btn.getAttribute('data-dir'), 10);
       if (carousels[key]) carousels[key].nudge(dir);
     });
+  });
+
+  var carouselResizeTimer;
+  window.addEventListener('resize', function(){
+    clearTimeout(carouselResizeTimer);
+    carouselResizeTimer = setTimeout(function(){
+      Object.keys(carousels).forEach(function(k){ carousels[k].recalc(); });
+    }, 200);
   });
 
   /* ---------- VIDEO CLICK-TO-PLAY ---------- */
