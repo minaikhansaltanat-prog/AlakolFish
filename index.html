@@ -137,6 +137,11 @@
         <span data-lang-label-ru class="lang-seg rounded-full px-2.5 py-1 transition-fast">РУС</span>
       </button>
 
+      <button id="cartBtn" type="button" aria-label="Себет" class="relative w-11 h-11 flex items-center justify-center rounded-full hover:bg-white/10 transition-fast cursor-pointer text-white">
+        <svg viewBox="0 0 24 24" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+        <span id="cartBadge" class="absolute -top-1 -right-1 min-w-[18px] h-[18px] px-1 rounded-full bg-gold text-navy text-[10px] font-bold flex items-center justify-center hidden">0</span>
+      </button>
+
       <a href="https://wa.me/77472048407?text=Сал%D0%B5м%D0%B5тс%D1%96з%D0%B1е!%20Пра%D0%B9с-лист%20а%D0%BB%D1%83%20%D0%BA%D0%B5%D1%80%D0%B5%D0%BA"
          target="_blank" rel="noopener"
          class="hidden md:inline-flex btn-whatsapp items-center gap-2 rounded-full px-4 py-2.5 text-sm font-bold transition-fast cursor-pointer">
@@ -188,6 +193,35 @@
     </div>
   </div>
 </div>
+
+<!-- ============ CART DRAWER ============ -->
+<div id="cartOverlay" class="fixed inset-0 z-[60] bg-black/55 opacity-0 pointer-events-none transition-fast" style="transition-duration:300ms"></div>
+<aside id="cartDrawer" class="fixed top-0 right-0 z-[70] h-full w-full sm:w-[420px] bg-navy translate-x-full transition-fast flex flex-col" style="transition-duration:340ms" role="dialog" aria-modal="true" aria-label="Себет">
+  <div class="flex items-center justify-between px-5 sm:px-6 py-5 border-b border-white/10 shrink-0">
+    <h2 class="font-display text-goldpale text-xl font-bold" data-kz="Себет" data-ru="Корзина">Себет</h2>
+    <button id="cartCloseBtn" type="button" aria-label="Себетті жабу" class="w-10 h-10 flex items-center justify-center rounded-full bg-white/10 hover:bg-gold hover:text-navy text-white transition-fast cursor-pointer">
+      <svg viewBox="0 0 24 24" class="w-5 h-5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+  </div>
+
+  <div id="cartItems" class="flex-1 overflow-y-auto px-5 sm:px-6 py-4 flex flex-col gap-3"></div>
+
+  <div id="cartEmptyState" class="flex-1 flex flex-col items-center justify-center text-center px-8 gap-3">
+    <svg viewBox="0 0 24 24" class="w-12 h-12 text-white/25" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+    <p class="text-white/55 text-sm" data-kz="Себетіңіз бос. Каталогтан балық таңдап қосыңыз." data-ru="Ваша корзина пуста. Выберите рыбу из каталога.">Себетіңіз бос. Каталогтан балық таңдап қосыңыз.</p>
+  </div>
+
+  <div id="cartFooter" class="border-t border-white/10 px-5 sm:px-6 py-5 shrink-0 hidden">
+    <div class="flex items-center justify-between mb-4">
+      <span class="text-white/70 text-sm" data-kz="Жалпы көлем" data-ru="Общий объём">Жалпы көлем</span>
+      <span id="cartTotal" class="text-goldpale font-display text-lg font-bold">0 кг</span>
+    </div>
+    <button id="cartCheckoutBtn" type="button" class="btn-whatsapp w-full transition-fast flex items-center justify-center gap-2 rounded-full px-6 py-4 text-sm font-bold cursor-pointer">
+      <svg viewBox="0 0 24 24" class="w-5 h-5" fill="currentColor"><path d="M12 2C6.48 2 2 6.48 2 12c0 1.85.5 3.58 1.38 5.07L2 22l5.07-1.33A9.96 9.96 0 0 0 12 22c5.52 0 10-4.48 10-10S17.52 2 12 2zm0 18c-1.6 0-3.1-.43-4.4-1.18l-.32-.19-2.99.78.8-2.91-.21-.3A7.95 7.95 0 0 1 4 12c0-4.42 3.58-8 8-8s8 3.58 8 8-3.58 8-8 8zm4.4-5.6c-.24-.12-1.43-.7-1.65-.78-.22-.08-.38-.12-.54.12-.16.24-.62.78-.76.94-.14.16-.28.18-.52.06-.24-.12-1.01-.37-1.92-1.18-.71-.63-1.19-1.41-1.33-1.65-.14-.24-.01-.37.11-.49.11-.11.24-.28.36-.42.12-.14.16-.24.24-.4.08-.16.04-.3-.04-.42-.08-.12-.5-1.2-.68-1.64-.18-.43-.36-.37-.5-.38-.13-.01-.28-.01-.43-.01-.15 0-.39.06-.6.3-.21.24-.8.78-.8 1.9 0 1.12.82 2.2.93 2.35.11.16 1.56 2.38 3.78 3.25 2.22.86 2.22.58 2.62.54.4-.04 1.43-.58 1.63-1.14.2-.56.2-1.04.14-1.14-.06-.1-.22-.16-.46-.28z"/></svg>
+      <span data-kz="Төлем, жасап тапсырыс беру" data-ru="Оплата, оформить заказ">Төлем, жасап тапсырыс беру</span>
+    </button>
+  </div>
+</aside>
 
 <!-- ============ HERO ============ -->
 <section id="hero" class="relative pt-[104px] pb-14 sm:min-h-[100vh] sm:flex sm:items-center sm:pb-16 sm:pt-[72px] overflow-hidden">
@@ -264,10 +298,21 @@
           <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Судак крупный</h3>
           <p class="text-white/70 text-sm mb-1" data-kz="Ірі 1.5кг+ · Ресторан деңгейі" data-ru="Крупный 1.5кг+ · Уровень ресторана">Ірі 1.5кг+ · Ресторан деңгейі</p>
           <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Стейк, шашлык, фиш-плейт" data-ru="Стейк, шашлык, фиш-плейт">Стейк, шашлык, фиш-плейт</p>
-          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
-            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
-            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="mt-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1">
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="dec" data-product="Судак крупный" aria-label="Азайту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </button>
+              <span class="qty-display w-12 text-center text-white font-bold text-sm" data-product="Судак крупный">0 <span class="text-white/40 text-[10px] font-normal">кг</span></span>
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="inc" data-product="Судак крупный" aria-label="Көбейту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="button" class="add-cart-btn inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-xs uppercase tracking-wide rounded-full px-3.5 py-2.5 hover:bg-goldlight transition-fast cursor-pointer shrink-0" data-product="Судак крупный">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+              <span data-kz="Себетке" data-ru="В корзину">Себетке</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -282,10 +327,21 @@
           <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Судак средний</h3>
           <p class="text-white/70 text-sm mb-1" data-kz="Орта 0.5-1.5кг · Кафе/асхана" data-ru="Средний 0.5-1.5кг · Кафе/столовая">Орта 0.5-1.5кг · Кафе/асхана</p>
           <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Тағамдар, котлет, запекание" data-ru="Блюда, котлеты, запеканка">Тағамдар, котлет, запекание</p>
-          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
-            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
-            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="mt-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1">
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="dec" data-product="Судак средний" aria-label="Азайту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </button>
+              <span class="qty-display w-12 text-center text-white font-bold text-sm" data-product="Судак средний">0 <span class="text-white/40 text-[10px] font-normal">кг</span></span>
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="inc" data-product="Судак средний" aria-label="Көбейту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="button" class="add-cart-btn inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-xs uppercase tracking-wide rounded-full px-3.5 py-2.5 hover:bg-goldlight transition-fast cursor-pointer shrink-0" data-product="Судак средний">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+              <span data-kz="Себетке" data-ru="В корзину">Себетке</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -300,10 +356,21 @@
           <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Сазан средний</h3>
           <p class="text-white/70 text-sm mb-1" data-kz="Орта · Ұлттық тағамдарға" data-ru="Средний · Для нац. блюд">Орта · Ұлттық тағамдарға</p>
           <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Бесбармақ, сорпа, қуырма" data-ru="Бесбармак, шурпа, жаркое">Бесбармақ, сорпа, қуырма</p>
-          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
-            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
-            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="mt-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1">
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="dec" data-product="Сазан средний" aria-label="Азайту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </button>
+              <span class="qty-display w-12 text-center text-white font-bold text-sm" data-product="Сазан средний">0 <span class="text-white/40 text-[10px] font-normal">кг</span></span>
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="inc" data-product="Сазан средний" aria-label="Көбейту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="button" class="add-cart-btn inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-xs uppercase tracking-wide rounded-full px-3.5 py-2.5 hover:bg-goldlight transition-fast cursor-pointer shrink-0" data-product="Сазан средний">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+              <span data-kz="Себетке" data-ru="В корзину">Себетке</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -318,10 +385,21 @@
           <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Окунь</h3>
           <p class="text-white/70 text-sm mb-1" data-kz="Диеталық, жылдам" data-ru="Диетический, быстрый">Диеталық, жылдам</p>
           <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Мангал, гриль, котлет" data-ru="Мангал, гриль, котлеты">Мангал, гриль, котлет</p>
-          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
-            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
-            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="mt-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1">
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="dec" data-product="Окунь" aria-label="Азайту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </button>
+              <span class="qty-display w-12 text-center text-white font-bold text-sm" data-product="Окунь">0 <span class="text-white/40 text-[10px] font-normal">кг</span></span>
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="inc" data-product="Окунь" aria-label="Көбейту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="button" class="add-cart-btn inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-xs uppercase tracking-wide rounded-full px-3.5 py-2.5 hover:bg-goldlight transition-fast cursor-pointer shrink-0" data-product="Окунь">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+              <span data-kz="Себетке" data-ru="В корзину">Себетке</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -336,10 +414,21 @@
           <h3 class="font-display text-goldpale text-xl font-bold mb-1.5">Філе</h3>
           <p class="text-white/70 text-sm mb-1" data-kz="Тазаланған, сүйексіз" data-ru="Очищенное, без костей">Тазаланған, сүйексіз</p>
           <p class="text-white/55 text-sm leading-relaxed mb-5" data-kz="Кез келген тағамға тиімді" data-ru="Подходит для любых блюд">Кез келген тағамға тиімді</p>
-          <a href="#order" class="mt-auto inline-flex items-center gap-1.5 text-gold font-bold text-sm hover:text-goldpale transition-fast cursor-pointer">
-            <span data-kz="Сұраныс білдіру" data-ru="Узнать цену">Сұраныс білдіру</span>
-            <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2.4"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
-          </a>
+          <div class="mt-auto flex items-center justify-between gap-2">
+            <div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1">
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="dec" data-product="Філе" aria-label="Азайту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>
+              </button>
+              <span class="qty-display w-12 text-center text-white font-bold text-sm" data-product="Філе">0 <span class="text-white/40 text-[10px] font-normal">кг</span></span>
+              <button type="button" class="qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-qty-action="inc" data-product="Філе" aria-label="Көбейту">
+                <svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>
+              </button>
+            </div>
+            <button type="button" class="add-cart-btn inline-flex items-center gap-1.5 bg-gold text-navy font-bold text-xs uppercase tracking-wide rounded-full px-3.5 py-2.5 hover:bg-goldlight transition-fast cursor-pointer shrink-0" data-product="Філе">
+              <svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h2l.4 2M7 13h10l3.6-7.5H5.2M7 13L5.4 5M7 13l-1.4 2.6A1 1 0 006.5 17H17M9 21a1 1 0 100-2 1 1 0 000 2zM17 21a1 1 0 100-2 1 1 0 000 2z"/></svg>
+              <span data-kz="Себетке" data-ru="В корзину">Себетке</span>
+            </button>
+          </div>
         </div>
       </article>
 
@@ -1073,7 +1162,7 @@
   });
   mobileCloseBtn.addEventListener('click', closeMenu);
   document.querySelectorAll('.mobile-link').forEach(function(a){ a.addEventListener('click', closeMenu); });
-  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') closeMenu(); });
+  document.addEventListener('keydown', function(e){ if (e.key === 'Escape') { closeMenu(); closeCart(); } });
 
   /* ---------- HEADER SCROLL SHADOW ---------- */
   var header = document.getElementById('siteHeader');
@@ -1283,6 +1372,194 @@
     document.querySelector('input[name="clientType"][value="b2b"]').checked = true;
     b2bFields.style.display = '';
   });
+
+  /* ---------- CART ---------- */
+  var cartBtn = document.getElementById('cartBtn');
+  var cartBadge = document.getElementById('cartBadge');
+  var cartOverlay = document.getElementById('cartOverlay');
+  var cartDrawer = document.getElementById('cartDrawer');
+  var cartCloseBtn = document.getElementById('cartCloseBtn');
+  var cartItems = document.getElementById('cartItems');
+  var cartEmptyState = document.getElementById('cartEmptyState');
+  var cartFooter = document.getElementById('cartFooter');
+  var cartTotal = document.getElementById('cartTotal');
+  var cartCheckoutBtn = document.getElementById('cartCheckoutBtn');
+
+  var CART_KEY = 'alakolCart';
+  var cart = {};
+  try {
+    var savedCart = JSON.parse(localStorage.getItem(CART_KEY) || '{}');
+    if (savedCart && typeof savedCart === 'object') cart = savedCart;
+  } catch(e){}
+
+  var pendingQty = {};
+  document.querySelectorAll('.qty-display').forEach(function(el){
+    pendingQty[el.getAttribute('data-product')] = 0;
+  });
+
+  function saveCart(){
+    try { localStorage.setItem(CART_KEY, JSON.stringify(cart)); } catch(e){}
+  }
+
+  function cartProducts(){
+    return Object.keys(cart).filter(function(p){ return cart[p] > 0; });
+  }
+
+  function cartTotalKg(){
+    return cartProducts().reduce(function(sum, p){ return sum + cart[p]; }, 0);
+  }
+
+  function updateCartBadge(){
+    var total = cartTotalKg();
+    cartBadge.textContent = total;
+    cartBadge.classList.toggle('hidden', total <= 0);
+  }
+
+  function setPendingQty(product, qty){
+    qty = Math.max(0, qty);
+    pendingQty[product] = qty;
+    document.querySelectorAll('.qty-display[data-product="' + cssEscape(product) + '"]').forEach(function(el){
+      el.childNodes[0].textContent = qty + ' ';
+    });
+  }
+
+  function cssEscape(str){
+    return str.replace(/["\\]/g, '\\$&');
+  }
+
+  document.querySelectorAll('.qty-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var product = btn.getAttribute('data-product');
+      var current = pendingQty[product] || 0;
+      var step = btn.getAttribute('data-qty-action') === 'inc' ? 1 : -1;
+      setPendingQty(product, current + step);
+    });
+  });
+
+  document.querySelectorAll('.add-cart-btn').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var product = btn.getAttribute('data-product');
+      var qty = pendingQty[product] || 0;
+      if (qty <= 0) {
+        showToast(currentLang() === 'ru' ? 'Сначала выберите количество (кг)' : 'Алдымен мөлшерін (кг) таңдаңыз');
+        return;
+      }
+      cart[product] = (cart[product] || 0) + qty;
+      setPendingQty(product, 0);
+      saveCart();
+      renderCart();
+      updateCartBadge();
+      showToast(currentLang() === 'ru' ? 'Добавлено в корзину' : 'Себетке қосылды');
+      gaEvent('add_to_cart', { product: product, qty: qty });
+    });
+  });
+
+  function renderCart(){
+    var products = cartProducts();
+    cartItems.innerHTML = '';
+    if (!products.length) {
+      cartItems.classList.add('hidden');
+      cartEmptyState.classList.remove('hidden');
+      cartFooter.classList.add('hidden');
+      return;
+    }
+    cartItems.classList.remove('hidden');
+    cartEmptyState.classList.add('hidden');
+    cartFooter.classList.remove('hidden');
+
+    products.forEach(function(product){
+      var row = document.createElement('div');
+      row.className = 'cart-row flex items-center gap-3 bg-white/5 rounded-xl px-4 py-3';
+      row.setAttribute('data-product', product);
+      row.innerHTML =
+        '<div class="flex-1 min-w-0">' +
+          '<p class="text-white font-semibold text-sm truncate">' + product + '</p>' +
+          '<p class="text-white/45 text-xs mt-0.5">' + cart[product] + ' кг</p>' +
+        '</div>' +
+        '<div class="flex items-center gap-0.5 bg-white/10 rounded-full p-1 shrink-0">' +
+          '<button type="button" class="cart-qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-cart-action="dec" data-product="' + product + '" aria-label="Азайту">' +
+            '<svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M5 12h14"/></svg>' +
+          '</button>' +
+          '<span class="text-white text-sm font-bold w-7 text-center">' + cart[product] + '</span>' +
+          '<button type="button" class="cart-qty-btn w-7 h-7 rounded-full flex items-center justify-center text-white hover:bg-white/20 transition-fast cursor-pointer" data-cart-action="inc" data-product="' + product + '" aria-label="Көбейту">' +
+            '<svg viewBox="0 0 24 24" class="w-3.5 h-3.5" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round"><path d="M12 5v14M5 12h14"/></svg>' +
+          '</button>' +
+        '</div>' +
+        '<button type="button" class="cart-remove-btn w-8 h-8 flex items-center justify-center rounded-full text-white/40 hover:text-gold hover:bg-white/10 transition-fast cursor-pointer shrink-0" data-product="' + product + '" aria-label="Жою">' +
+          '<svg viewBox="0 0 24 24" class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M3 6h18M8 6V4a1 1 0 011-1h6a1 1 0 011 1v2m2 0-1 14a1 1 0 01-1 1H7a1 1 0 01-1-1L5 6"/></svg>' +
+        '</button>';
+      cartItems.appendChild(row);
+    });
+
+    cartTotal.textContent = cartTotalKg() + ' кг';
+  }
+
+  cartItems.addEventListener('click', function(e){
+    var qtyBtn = e.target.closest('.cart-qty-btn');
+    if (qtyBtn) {
+      var product = qtyBtn.getAttribute('data-product');
+      var step = qtyBtn.getAttribute('data-cart-action') === 'inc' ? 1 : -1;
+      var next = (cart[product] || 0) + step;
+      if (next <= 0) { delete cart[product]; } else { cart[product] = next; }
+      saveCart();
+      renderCart();
+      updateCartBadge();
+      return;
+    }
+    var removeBtn = e.target.closest('.cart-remove-btn');
+    if (removeBtn) {
+      delete cart[removeBtn.getAttribute('data-product')];
+      saveCart();
+      renderCart();
+      updateCartBadge();
+    }
+  });
+
+  function openCart(){
+    renderCart();
+    cartOverlay.classList.remove('opacity-0', 'pointer-events-none');
+    cartOverlay.classList.add('opacity-100');
+    cartDrawer.classList.remove('translate-x-full');
+    document.body.style.overflow = 'hidden';
+  }
+  function closeCart(){
+    cartOverlay.classList.add('opacity-0', 'pointer-events-none');
+    cartOverlay.classList.remove('opacity-100');
+    cartDrawer.classList.add('translate-x-full');
+    document.body.style.overflow = '';
+  }
+
+  cartBtn.addEventListener('click', openCart);
+  cartCloseBtn.addEventListener('click', closeCart);
+  cartOverlay.addEventListener('click', closeCart);
+
+  cartCheckoutBtn.addEventListener('click', function(){
+    var products = cartProducts();
+    if (!products.length) {
+      showToast(currentLang() === 'ru' ? 'Корзина пуста' : 'Себет бос');
+      return;
+    }
+    var lines = ['Жаңа тапсырыс — Себет (Alakol Fish)', '', 'Балықтар:'];
+    products.forEach(function(product, i){
+      lines.push((i + 1) + '. ' + product + ' — ' + cart[product] + ' кг');
+    });
+    lines.push('');
+    lines.push('Жалпы: ' + cartTotalKg() + ' кг');
+
+    var text = encodeURIComponent(lines.join('\n'));
+    window.open('https://wa.me/77472048407?text=' + text, '_blank', 'noopener');
+    gaEvent('cart_checkout', { total_kg: cartTotalKg(), items: products.length });
+
+    cart = {};
+    saveCart();
+    renderCart();
+    updateCartBadge();
+    closeCart();
+    showToast(currentLang() === 'ru' ? 'Заказ отправлен в WhatsApp' : 'Тапсырыс WhatsApp-қа жіберілді');
+  });
+
+  renderCart();
+  updateCartBadge();
 
   /* ---------- ANALYTICS STUBS (GA4 / Yandex.Metrika) ---------- */
   window.dataLayer = window.dataLayer || [];
